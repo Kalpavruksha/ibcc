@@ -22,7 +22,9 @@ export default function ScrollReveal({ children, className = "", delay = 0, as: 
           observer.unobserve(el);
         }
       },
-      { threshold: 0, rootMargin: "600px 0px 600px 0px" }
+      // -60px: fires when element is 60px inside the viewport
+      // Works on both desktop and mobile (small viewport)
+      { threshold: 0, rootMargin: "0px 0px -60px 0px" }
     );
 
     observer.observe(el);

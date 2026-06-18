@@ -749,3 +749,46 @@
 .animate-splash-loading {
   animation: splash-shimmer 1.5s ease-in-out infinite;
 }
+
+/* ═══ MOBILE / TOUCH COMPATIBILITY ════════════════════════════════
+ * 1. Hover effects only apply on devices that support true hover
+ *    (mice). On touch screens :hover can get "stuck" after a tap.
+ * 2. Respect prefers-reduced-motion for accessibility — disable
+ *    all animations for users who asked for less motion.
+ * ═══════════════════════════════════════════════════════════════ */
+
+/* Only apply hover transforms on non-touch devices */
+@media (hover: none) {
+  /* Remove translateY on cards for touch screens */
+  .product-card:hover,
+  [class*="hover:-translate-y"]:hover {
+    transform: none !important;
+  }
+  /* Keep marquee running but don't pause on touch */
+  .marquee-track:hover,
+  .marquee-track-reverse:hover {
+    animation-play-state: running;
+  }
+}
+
+/* Respect OS "Reduce Motion" setting */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  /* Still show scroll-revealed elements — just without animation */
+  .scroll-reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+  .marquee-track,
+  .marquee-track-reverse,
+  .marquee-track-fast {
+    animation: none;
+  }
+}
