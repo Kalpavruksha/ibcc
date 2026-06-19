@@ -10,6 +10,7 @@ const GALLERY_ITEMS = [
     title: "Conveyor Belts",
     desc: "EP-grade flat conveyor belts in large industrial rolls",
     category: "Conveyor Belts",
+    icon: "📦",
   },
   {
     id: "g-bearings",
@@ -17,13 +18,15 @@ const GALLERY_ITEMS = [
     title: "Industrial Bearings",
     desc: "SKF, FAG, NTN, NBC & ARB bearing collection",
     category: "Bearings",
+    icon: "⚙️",
   },
   {
     id: "g-chains-sprockets",
-    src: "/images/product-chains-sprockets.png",
+    src: "/images/real-photo-chain.png",
     title: "Roller Chains & Sprockets",
     desc: "Rolon, Diamond & Hero roller chains with precision sprockets",
     category: "Chains",
+    icon: "⛓️",
   },
   {
     id: "g-vbelts",
@@ -31,6 +34,7 @@ const GALLERY_ITEMS = [
     title: "V-Belts & Fenner Poly-F",
     desc: "A, B, C, D section belts and Fenner Poly-F raw-edge belts",
     category: "V-Belts",
+    icon: "〰️",
   },
   {
     id: "g-vpulley",
@@ -38,6 +42,7 @@ const GALLERY_ITEMS = [
     title: "V-Pulleys & Taper Lock",
     desc: "Cast iron V-groove pulleys in all standard sizes",
     category: "V-Pulleys",
+    icon: "🔩",
   },
   {
     id: "g-pulley-block",
@@ -45,6 +50,7 @@ const GALLERY_ITEMS = [
     title: "Chain Pulley Blocks",
     desc: "Heavy-duty manual chain hoists, 1T to 5T capacity",
     category: "Chain Blocks",
+    icon: "🏗️",
   },
   {
     id: "g-ricemill",
@@ -52,6 +58,7 @@ const GALLERY_ITEMS = [
     title: "Rice Mill Spare Parts",
     desc: "Rubber rollers, sheller stones, bearing sets & belt kits",
     category: "Rice Mill",
+    icon: "🌾",
   },
   {
     id: "g-crusher",
@@ -59,6 +66,7 @@ const GALLERY_ITEMS = [
     title: "Crusher Spare Parts",
     desc: "Jaw plates, toggle plates & bearing assemblies",
     category: "Crusher",
+    icon: "🪨",
   },
   {
     id: "g-feed-spares",
@@ -66,20 +74,31 @@ const GALLERY_ITEMS = [
     title: "Feed Mill Spares",
     desc: "Hammer mill screens, elevator buckets & conveyor chains",
     category: "Feed Mill",
+    icon: "🌽",
   },
   {
-    id: "g-hero",
-    src: "/images/hero-factory.png",
-    title: "Industrial Installation",
-    desc: "Large-scale industrial conveyor and plant setup",
-    category: "Industrial",
+    id: "g-wire-rope",
+    src: "/images/product-wire-rope.png",
+    title: "Wire Rope & Slings",
+    desc: "6×19 and 6×37 wire ropes, webbing slings for lifting",
+    category: "Wire Rope",
+    icon: "🪢",
   },
   {
-    id: "g-warehouse",
-    src: "/images/about-warehouse.png",
-    title: "Our Warehouse",
-    desc: "Well-stocked shelving with a wide range of industrial parts",
-    category: "Warehouse",
+    id: "g-oil-seals",
+    src: "/images/product-oil-seals.png",
+    title: "Oil Seals & Couplings",
+    desc: "NBR/Viton rotary oil seals, jaw couplings & O-rings",
+    category: "Oil Seals",
+    icon: "💧",
+  },
+  {
+    id: "g-gearboxes",
+    src: "/images/product-gearboxes.png",
+    title: "Gearboxes",
+    desc: "Worm and helical gearboxes for industrial power transmission",
+    category: "Gearboxes",
+    icon: "🔧",
   },
 ];
 
@@ -88,10 +107,16 @@ const ALL_CATS = ["All", ...Array.from(new Set(GALLERY_ITEMS.map((g) => g.catego
 export default function GalleryClient() {
   const [lightboxItem, setLightboxItem] = useState<typeof GALLERY_ITEMS[0] | null>(null);
   const [activeFilter, setActiveFilter] = useState("All");
+  const [sidebarOpen, setSidebarOpen] = useState(false);
 
   const filtered = activeFilter === "All"
     ? GALLERY_ITEMS
     : GALLERY_ITEMS.filter((g) => g.category === activeFilter);
+
+  const handleFilter = (cat: string) => {
+    setActiveFilter(cat);
+    setSidebarOpen(false);
+  };
 
   return (
     <>
@@ -106,85 +131,154 @@ export default function GalleryClient() {
         </div>
       </div>
 
-      <div className="container-xl py-10">
-        {/* Filter tabs */}
-        <div className="-mx-4 px-4 overflow-x-auto mb-8">
-          <div className="flex gap-2 pb-2" style={{ width: "max-content" }}>
-            {ALL_CATS.map((cat) => (
-              <button
-                key={cat}
-                id={`gallery-filter-${cat.toLowerCase().replace(/\s+/g, "-")}`}
-                onClick={() => setActiveFilter(cat)}
-                className={`category-tab ${activeFilter === cat ? "active" : ""}`}
-              >
-                {cat}
-              </button>
-            ))}
-          </div>
+      <div className="container-xl py-8">
+
+        {/* Mobile filter toggle */}
+        <div className="lg:hidden mb-4">
+          <button
+            onClick={() => setSidebarOpen(!sidebarOpen)}
+            className="flex items-center gap-2 bg-[#072a6b] text-white font-bold px-5 py-2.5 rounded-lg text-sm w-full justify-between"
+          >
+            <span className="flex items-center gap-2">
+              <FilterIcon />
+              {activeFilter === "All" ? "All Categories" : activeFilter}
+            </span>
+            <span className="text-[#F2A900] text-xs font-medium">
+              {filtered.length} items
+            </span>
+          </button>
+
+          {sidebarOpen && (
+            <div className="mt-2 bg-white border border-slate-200 rounded-xl shadow-xl overflow-hidden z-20 relative">
+              <SidebarContent
+                categories={ALL_CATS}
+                items={GALLERY_ITEMS}
+                activeFilter={activeFilter}
+                onSelect={handleFilter}
+              />
+            </div>
+          )}
         </div>
 
-        {/* Gallery grid — responsive masonry-like layout */}
-        <div className="columns-1 sm:columns-2 lg:columns-3 xl:columns-4 gap-4 space-y-4">
-          {filtered.map((item) => (
-            <div
-              key={item.id}
-              id={item.id}
-              className="gallery-item break-inside-avoid"
-              onClick={() => setLightboxItem(item)}
-              role="button"
-              aria-label={`View ${item.title}`}
-              tabIndex={0}
-              onKeyDown={(e) => e.key === "Enter" && setLightboxItem(item)}
-            >
-              <div className="relative aspect-square sm:aspect-auto">
-                <Image
-                  src={item.src}
-                  alt={item.title}
-                  width={600}
-                  height={450}
-                  className="w-full h-auto rounded-lg"
-                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
-                />
+        {/* Desktop: sidebar + gallery */}
+        <div className="flex gap-8 items-start">
+
+          {/* ── SIDEBAR (desktop only) ── */}
+          <aside className="hidden lg:block w-60 flex-shrink-0 sticky top-24">
+            <div className="bg-white border border-slate-200 rounded-2xl shadow-sm overflow-hidden">
+              <div className="bg-[#072a6b] px-4 py-3">
+                <p className="text-white font-bold text-xs uppercase tracking-widest">
+                  Filter by Category
+                </p>
               </div>
-              {/* Hover overlay icon */}
-              <div className="gallery-overlay-icon">
-                <div className="bg-white rounded-full w-12 h-12 flex items-center justify-center shadow-xl">
-                  <ZoomIcon />
+              <SidebarContent
+                categories={ALL_CATS}
+                items={GALLERY_ITEMS}
+                activeFilter={activeFilter}
+                onSelect={handleFilter}
+              />
+            </div>
+
+            {/* Quick action card */}
+            <div className="mt-4 bg-gradient-to-br from-[#F2A900] to-[#e09800] rounded-2xl p-5 text-center shadow">
+              <p className="text-[#072a6b] font-extrabold text-sm mb-1">Want more photos?</p>
+              <p className="text-[#072a6b]/70 text-xs mb-3 leading-snug">
+                Send us a WhatsApp for any specific product images.
+              </p>
+              <a
+                href="https://wa.me/919062186130?text=Hello%2C%20I%20would%20like%20to%20see%20more%20photos%20of%20your%20products."
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center gap-1.5 bg-[#25D366] text-white font-bold text-xs px-4 py-2.5 rounded-lg hover:bg-[#1db954] transition-colors"
+              >
+                <WhatsAppIcon /> WhatsApp Us
+              </a>
+            </div>
+          </aside>
+
+          {/* ── MAIN CONTENT ── */}
+          <div className="flex-1 min-w-0">
+            {/* Results bar */}
+            <div className="flex items-center justify-between mb-5 bg-slate-50 border border-slate-200 rounded-xl px-4 py-2.5">
+              <p className="text-slate-600 text-sm">
+                Showing{" "}
+                <span className="font-bold text-[#0B3D91]">{filtered.length}</span>{" "}
+                {activeFilter !== "All" ? (
+                  <>images in <span className="font-semibold text-slate-700">{activeFilter}</span></>
+                ) : (
+                  "images"
+                )}
+              </p>
+              {activeFilter !== "All" && (
+                <button
+                  onClick={() => setActiveFilter("All")}
+                  className="text-xs text-[#0B3D91] font-semibold hover:underline"
+                >
+                  ✕ Clear filter
+                </button>
+              )}
+            </div>
+
+            {/* Gallery grid — masonry columns */}
+            <div className="columns-1 sm:columns-2 xl:columns-3 gap-4 space-y-4">
+              {filtered.map((item) => (
+                <div
+                  key={item.id}
+                  id={item.id}
+                  className="gallery-item break-inside-avoid"
+                  onClick={() => setLightboxItem(item)}
+                  role="button"
+                  aria-label={`View ${item.title}`}
+                  tabIndex={0}
+                  onKeyDown={(e) => e.key === "Enter" && setLightboxItem(item)}
+                >
+                  <div className="relative">
+                    <Image
+                      src={item.src}
+                      alt={item.title}
+                      width={600}
+                      height={450}
+                      className="w-full h-auto rounded-lg"
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    />
+                  </div>
+                  {/* Hover overlay icon */}
+                  <div className="gallery-overlay-icon">
+                    <div className="bg-white rounded-full w-12 h-12 flex items-center justify-center shadow-xl">
+                      <ZoomIcon />
+                    </div>
+                  </div>
+                  {/* Caption on hover */}
+                  <div className="absolute bottom-0 left-0 right-0 z-10 px-3 pb-3 opacity-0 gallery-item-caption translate-y-2 transition-all duration-300">
+                    <p className="text-white font-bold text-sm leading-tight drop-shadow-lg">{item.title}</p>
+                    <p className="text-white/70 text-xs mt-0.5 drop-shadow-lg">{item.desc}</p>
+                  </div>
                 </div>
-              </div>
-              {/* Caption on hover */}
-              <div className="absolute bottom-0 left-0 right-0 z-10 px-3 pb-3 opacity-0 gallery-item-caption translate-y-2 transition-all duration-300">
-                <p className="text-white font-bold text-sm leading-tight drop-shadow-lg">{item.title}</p>
-                <p className="text-white/70 text-xs mt-0.5 drop-shadow-lg">{item.desc}</p>
+              ))}
+            </div>
+
+            {/* Bottom CTA */}
+            <div className="mt-12 text-center">
+              <p className="text-slate-500 mb-4">
+                Want to see a product in action or need a customised quote?
+              </p>
+              <div className="flex flex-wrap gap-4 justify-center">
+                <a
+                  href="https://wa.me/919062186130"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  id="gallery-whatsapp-cta"
+                  className="flex items-center gap-2 bg-[#25D366] text-white font-bold px-6 py-3 rounded-lg hover:bg-[#1db954] transition-colors"
+                >
+                  <WhatsAppIcon />
+                  Request More Photos
+                </a>
+                <a href="/contact" id="gallery-contact-cta" className="btn-navy">
+                  Send Enquiry
+                  <ArrowRightIcon />
+                </a>
               </div>
             </div>
-          ))}
-        </div>
-
-        {/* Bottom CTA */}
-        <div className="mt-16 text-center">
-          <p className="text-slate-500 mb-4">
-            Want to see a product in action or need a customised quote?
-          </p>
-          <div className="flex flex-wrap gap-4 justify-center">
-            <a
-              href="https://wa.me/919062186130"
-              target="_blank"
-              rel="noopener noreferrer"
-              id="gallery-whatsapp-cta"
-              className="flex items-center gap-2 bg-[#25D366] text-white font-bold px-6 py-3 rounded-lg hover:bg-[#1db954] transition-colors"
-            >
-              <WhatsAppIcon />
-              Request More Photos
-            </a>
-            <a
-              href="/contact"
-              id="gallery-contact-cta"
-              className="btn-navy"
-            >
-              Send Enquiry
-              <ArrowRightIcon />
-            </a>
           </div>
         </div>
       </div>
@@ -222,6 +316,65 @@ export default function GalleryClient() {
         </div>
       )}
     </>
+  );
+}
+
+// ── SIDEBAR CONTENT ────────────────────────────────────────────────────
+function SidebarContent({
+  categories,
+  items,
+  activeFilter,
+  onSelect,
+}: {
+  categories: string[];
+  items: typeof GALLERY_ITEMS;
+  activeFilter: string;
+  onSelect: (cat: string) => void;
+}) {
+  return (
+    <nav className="py-2">
+      {categories.map((cat, idx) => {
+        const count = cat === "All" ? items.length : items.filter((i) => i.category === cat).length;
+        const icon = cat === "All" ? "🖼️" : (items.find((i) => i.category === cat)?.icon ?? "📷");
+        const isActive = activeFilter === cat;
+
+        return (
+          <div key={cat}>
+            {idx === 1 && <div className="mx-4 my-1 border-t border-slate-100" />}
+            <button
+              id={`gallery-filter-${cat.toLowerCase().replace(/\s+/g, "-")}`}
+              onClick={() => onSelect(cat)}
+              className={`w-full flex items-center justify-between px-4 py-2.5 text-sm transition-all duration-150 group
+                ${isActive
+                  ? "bg-[#072a6b] text-white font-semibold"
+                  : "text-slate-600 hover:bg-slate-50 hover:text-[#0B3D91] font-medium"
+                }`}
+            >
+              <span className="flex items-center gap-2.5">
+                <span className="text-base">{icon}</span>
+                <span className="text-left leading-tight">{cat === "All" ? "All Photos" : cat}</span>
+              </span>
+              <span className={`text-xs font-bold px-2 py-0.5 rounded-full flex-shrink-0
+                ${isActive
+                  ? "bg-[#F2A900] text-[#072a6b]"
+                  : "bg-slate-100 text-slate-500 group-hover:bg-[#e8f0fe] group-hover:text-[#0B3D91]"
+                }`}>
+                {count}
+              </span>
+            </button>
+          </div>
+        );
+      })}
+    </nav>
+  );
+}
+
+// ── ICONS ──────────────────────────────────────────────────────────────
+function FilterIcon() {
+  return (
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+      <line x1="4" y1="6" x2="20" y2="6" /><line x1="8" y1="12" x2="16" y2="12" /><line x1="11" y1="18" x2="13" y2="18" />
+    </svg>
   );
 }
 
