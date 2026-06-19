@@ -3,6 +3,11 @@
 import { useState, useEffect } from "react";
 import { useSearchParams } from "next/navigation";
 
+// 👉 Set NEXT_PUBLIC_FORMSPREE_ID in Vercel env vars
+// Get your free ID from https://formspree.io → New Form → copy the ID
+const FORMSPREE_ID = process.env.NEXT_PUBLIC_FORMSPREE_ID || "";
+const FORMSPREE_URL = FORMSPREE_ID ? `https://formspree.io/f/${FORMSPREE_ID}` : "";
+
 type FormState = {
   name: string;
   phone: string;
@@ -54,15 +59,31 @@ export default function ContactClient() {
 
     setStatus("submitting");
 
-    // Small delay for button feedback
-    await new Promise((r) => setTimeout(r, 600));
+    // ── 1. Send email via Formspree (if configured) ──────────────────
+    if (FORMSPREE_URL) {
+      try {
+        await fetch(FORMSPREE_URL, {
+          method: "POST",
+          headers: { "Content-Type": "application/json", Accept: "application/json" },
+          body: JSON.stringify({
+            name: form.name,
+            phone: form.phone,
+            email: form.email || "(not provided)",
+            product: form.product || "(not specified)",
+            message: form.message,
+            _subject: `New Enquiry from ${form.name} — IBCC Website`,
+          }),
+        });
+      } catch {
+        // Email failed silently — WhatsApp still opens
+      }
+    }
 
+    // ── 2. Open WhatsApp with pre-filled message ─────────────────────
     const text = `Hello! I'm ${form.name}.\n📞 Contact: ${form.phone}${form.email ? `\n📧 Email: ${form.email}` : ''}${form.product ? `\n🔩 Product Needed: ${form.product}` : ''}\n📝 Requirement: ${form.message}\n\n— Sent from IBCC Website`;
     const url = `https://wa.me/919062186130?text=${encodeURIComponent(text)}`;
-    
-    window.open(url, '_blank');
-    
-    // Show success state AFTER WhatsApp is opened
+    window.open(url, "_blank");
+
     setStatus("success");
     setForm({ name: "", phone: "", email: "", product: "", message: "" });
     setErrors({});
@@ -205,12 +226,17 @@ export default function ContactClient() {
                     </svg>
                   </div>
                   <h2 className="text-2xl font-extrabold text-slate-800 mb-2">
-                    Enquiry Received!
+                    Enquiry Sent! ✅
                   </h2>
-                  <p className="text-slate-500 mb-6">
-                    Thank you for reaching out. We'll get back to you shortly.<br />
-                    For urgent requirements, call or WhatsApp us directly.
+                  <p className="text-slate-500 mb-2">
+                    Your message was sent via WhatsApp.
                   </p>
+                  {FORMSPREE_URL && (
+                    <p className="text-slate-500 mb-6">
+                      A copy was also emailed to us at{" "}
+                      <span className="font-semibold text-[#0B3D91]">industrialbearing.hubli@gmail.com</span>
+                    </p>
+                  )}
                   <div className="flex flex-wrap gap-3 justify-center">
                     <button
                       onClick={() => setStatus("idle")}
