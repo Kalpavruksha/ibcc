@@ -61,9 +61,6 @@ export const metadata: Metadata = {
   },
   robots: { index: true, follow: true },
   authors: [{ name: "Industrial Bearing & Chain Centre" }],
-  alternates: {
-    canonical: "https://www.ibcc.in",
-  },
 };
 
 export default function RootLayout({

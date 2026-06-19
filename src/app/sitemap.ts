@@ -1,8 +1,14 @@
 import { MetadataRoute } from "next";
 
-export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://www.ibcc.in";
+// ✅ Set NEXT_PUBLIC_SITE_URL in Vercel dashboard under Environment Variables
+// Until domain is purchased, Vercel auto-sets VERCEL_PROJECT_PRODUCTION_URL
+const baseUrl = process.env.NEXT_PUBLIC_SITE_URL
+  ? `https://${process.env.NEXT_PUBLIC_SITE_URL}`
+  : process.env.VERCEL_PROJECT_PRODUCTION_URL
+  ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
+  : "https://ibcc.vercel.app"; // fallback — replace with actual Vercel URL if different
 
+export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
       url: baseUrl,
