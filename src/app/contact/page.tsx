@@ -5,7 +5,7 @@ import ContactClient from "./ContactClient";
 export const metadata: Metadata = {
   title: "Contact Us — Enquire About Products | Industrial Bearing & Chain Centre",
   description:
-    "Contact Industrial Bearing & Chain Centre in Hubballi. Call 9062186130 or 9036843910, WhatsApp, or email industrialbearing.hubli@gmail.com. Plot #29, Industrial Area, Gokul Road, Hubballi 580030.",
+    "Contact Industrial Bearing & Chain Centre in Hubballi. Call 7349049883 or 8147027162, WhatsApp, or email industrialbearing.hubli@gmail.com. Plot #29, Industrial Area, Gokul Road, Hubballi 580030.",
 };
 
 export default function ContactPage() {

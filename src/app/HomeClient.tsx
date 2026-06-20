@@ -120,8 +120,8 @@ export default function HomeClient({ brands, categories }: Props) {
             <h1 className="text-white text-5xl sm:text-6xl lg:text-7xl font-extrabold leading-tight mb-6">
               Industrial <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#F2A900] to-[#ffda6a]">
-                Bearings,
-              </span> Chains & Belts
+                Bearings &amp;
+              </span> Chain Centre
             </h1>
 
             <p className="text-white/70 text-lg sm:text-xl leading-relaxed mb-10 max-w-2xl mx-auto lg:mx-0">
@@ -360,14 +360,21 @@ export default function HomeClient({ brands, categories }: Props) {
             </div>
             <div className="flex flex-wrap gap-4">
               <a
-                href="tel:+919062186130"
+                href="tel:+917349049883"
                 className="flex items-center gap-2 bg-[#072a6b] text-white font-bold px-7 py-3.5 rounded-lg hover:bg-[#0B3D91] transition-colors shadow-lg"
               >
                 <PhoneIcon />
-                9062186130
+                7349049883
               </a>
               <a
-                href="https://wa.me/919062186130?text=Hello%2C%20I%20need%20a%20quote%20for%20"
+                href="tel:+918147027162"
+                className="flex items-center gap-2 bg-white/80 text-[#072a6b] font-bold px-7 py-3.5 rounded-lg hover:bg-white transition-colors shadow-lg"
+              >
+                <PhoneIcon />
+                81470 27162
+              </a>
+              <a
+                href="https://wa.me/917349049883?text=Hello%2C%20I%20need%20a%20quote%20for%20"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 bg-[#25D366] text-white font-bold px-7 py-3.5 rounded-lg hover:bg-[#1db954] transition-colors shadow-lg"

@@ -3,7 +3,7 @@ export default function MobileStickyFooter() {
     <div className="fixed bottom-0 left-0 right-0 z-50 bg-white border-t border-slate-200 shadow-[0_-4px_12px_rgba(0,0,0,0.05)] md:hidden">
       <div className="flex">
         <a 
-          href="tel:+919062186130"
+          href="tel:+917349049883"
           className="flex-1 flex flex-col items-center justify-center py-2.5 text-[#0B3D91] border-r border-slate-200 active:bg-slate-50 transition-colors"
         >
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="mb-0.5">
@@ -12,7 +12,7 @@ export default function MobileStickyFooter() {
           <span className="text-xs font-bold uppercase tracking-wider">Call Now</span>
         </a>
         <a 
-          href="https://wa.me/919062186130"
+          href="https://wa.me/917349049883"
           target="_blank"
           rel="noopener noreferrer"
           className="flex-1 flex flex-col items-center justify-center py-2.5 text-white bg-[#25D366] active:bg-[#1db954] transition-colors"

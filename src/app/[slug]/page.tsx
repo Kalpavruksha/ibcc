@@ -42,7 +42,7 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
 
   return {
     title: titles[category] || `${category} Supplier in Hubballi | Industrial Bearing & Chain Centre`,
-    description: `Buy genuine ${category.toLowerCase()} from Industrial Bearing & Chain Centre, Hubballi. Authorized stockist serving North Karnataka. Call 9062186130.`,
+    description: `Buy genuine ${category.toLowerCase()} from Industrial Bearing & Chain Centre, Hubballi. Authorized stockist serving North Karnataka. Call 7349049883.`,
   };
 }
 

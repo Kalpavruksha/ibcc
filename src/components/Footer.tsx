@@ -93,8 +93,8 @@ export default function Footer() {
               <div className="flex gap-3 items-start">
                 <PhoneIconSmall />
                 <div className="text-sm space-y-1">
-                  <a href="tel:+919062186130" className="footer-link block">9062186130</a>
-                  <a href="tel:+919036843910" className="footer-link block">9036843910</a>
+                  <a href="tel:+917349049883" className="footer-link block">7349049883</a>
+                  <a href="tel:+918147027162" className="footer-link block">81470 27162</a>
                   <a href="tel:+918364507884" className="footer-link block">0836-4507884 (Landline)</a>
                 </div>
               </div>

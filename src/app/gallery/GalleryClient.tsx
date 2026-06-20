@@ -186,7 +186,7 @@ export default function GalleryClient() {
                 Send us a WhatsApp for any specific product images.
               </p>
               <a
-                href="https://wa.me/919062186130?text=Hello%2C%20I%20would%20like%20to%20see%20more%20photos%20of%20your%20products."
+                href="https://wa.me/917349049883?text=Hello%2C%20I%20would%20like%20to%20see%20more%20photos%20of%20your%20products."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center gap-1.5 bg-[#25D366] text-white font-bold text-xs px-4 py-2.5 rounded-lg hover:bg-[#1db954] transition-colors"
@@ -264,7 +264,7 @@ export default function GalleryClient() {
               </p>
               <div className="flex flex-wrap gap-4 justify-center">
                 <a
-                  href="https://wa.me/919062186130"
+                  href="https://wa.me/917349049883"
                   target="_blank"
                   rel="noopener noreferrer"
                   id="gallery-whatsapp-cta"

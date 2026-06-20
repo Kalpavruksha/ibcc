@@ -146,10 +146,10 @@ export default function ProductsClient() {
                 We stock more than what&apos;s listed. Call us!
               </p>
               <a
-                href="tel:+919062186130"
+                href="tel:+917349049883"
                 className="flex items-center justify-center gap-1.5 bg-[#072a6b] text-white font-bold text-xs px-4 py-2.5 rounded-lg hover:bg-[#0B3D91] transition-colors"
               >
-                <PhoneIcon /> 9062186130
+                <PhoneIcon /> 7349049883
               </a>
             </div>
           </aside>
@@ -193,7 +193,7 @@ export default function ProductsClient() {
                   </button>
                 </p>
                 <a
-                  href="https://wa.me/919062186130"
+                  href="https://wa.me/917349049883"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn-primary"
@@ -258,11 +258,11 @@ export default function ProductsClient() {
                 we&apos;ll check availability immediately.
               </p>
               <div className="flex flex-wrap gap-4 justify-center">
-                <a href="tel:+919062186130" id="products-call-btn" className="btn-primary">
-                  <PhoneIcon /> 9062186130
+                <a href="tel:+917349049883" id="products-call-btn" className="btn-primary">
+                  <PhoneIcon /> 7349049883
                 </a>
                 <a
-                  href="https://wa.me/919062186130"
+                  href="https://wa.me/917349049883"
                   target="_blank"
                   rel="noopener noreferrer"
                   id="products-whatsapp-btn"

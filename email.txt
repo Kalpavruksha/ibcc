@@ -1,0 +1,40 @@
+Set Up Email in 5 Steps (Formspree — Free)
+Step 1 — Sign up
+Go to formspree.io → click Sign Up Free → use the client's Gmail (industrialbearing.hubli@gmail.com)
+
+Step 2 — Create a form
+Click + New Form
+Name it: IBCC Website Contact
+Email: industrialbearing.hubli@gmail.com
+Click Create Form
+Step 3 — Copy your Form ID
+You'll see a URL like:
+
+https://formspree.io/f/xpwzabcd
+                          ^^^^^^^^
+                          This is your Form ID
+Copy just the ID part (e.g. xpwzabcd)
+
+Step 4 — Add it to Vercel
+Go to vercel.com → IBCC project → Settings → Environment Variables
+Add:
+Name: NEXT_PUBLIC_FORMSPREE_ID
+Value: xpwzabcd (your actual ID)
+Environment: Production ✅
+Click Save
+Redeploy — Vercel → Deployments → click ⋯ → Redeploy
+Step 5 — Test it
+Fill the form on the website → submit → check Gmail inbox. You'll receive:
+
+Subject: New Enquiry from [Name] — IBCC Website
+---
+name: Raj Kumar
+phone: 9876543210
+product: SKF Bearing 6205
+message: Need 10 pieces urgently
+Summary
+Method	Status	Setup needed
+WhatsApp	✅ Works right now	None
+Email to Gmail	⚠️ Ready in code	5-min Formspree signup (free)
+Hosting cost	—	₹3000 for year
+The free Formspree plan gives 50 emails/month — more than enough for an industrial spare parts shop. If you need more, upgrade is ₹600/month but unlikely needed.

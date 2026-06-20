@@ -15,6 +15,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://industrialbearingcentre.in"),
   title: {
     default: "Industrial Bearing & Chain Centre | Bearings, Chains & Belts — Hubballi",
     template: "%s | Industrial Bearing & Chain Centre",
@@ -50,7 +51,7 @@ export const metadata: Metadata = {
     siteName: "Industrial Bearing & Chain Centre",
     title: "Industrial Bearing & Chain Centre | Hubballi",
     description:
-      "Established 2016. Genuine industrial bearings, chains, belts & spare parts. Serving Karnataka industries. Call: 9062186130.",
+      "Established 2016. Genuine industrial bearings, chains, belts & spare parts. Serving Karnataka industries. Call: 7349049883.",
     images: [{ url: "/images/plant home page.png", width: 1200, height: 630 }],
   },
   twitter: {
@@ -92,7 +93,7 @@ export default function RootLayout({
               "alternateName": "IBCC Hubballi",
               "description": "Authorised stockist of SKF, FAG, NTN, Fenner, Rolon bearings, V-belts, roller chains, sprockets, conveyor belts and industrial spare parts in Hubballi, Karnataka.",
               "url": "https://www.ibcc.in",
-              "telephone": ["+919062186130", "+919036843910"],
+              "telephone": ["+917349049883", "+918147027162"],
               "email": "industrialbearing.hubli@gmail.com",
               "address": {
                 "@type": "PostalAddress",

@@ -37,9 +37,6 @@ const BRANDS = [
   { name: "Rolon", tag: "Roller Chains", color: "#00529B" },
   { name: "Diamond", tag: "Industrial Chains", color: "#1E3A5F" },
   { name: "Hero", tag: "Industrial Chains", color: "#003087" },
-  { name: "Continental", tag: "Industrial Belts", color: "#FF8200" },
-  { name: "TVS", tag: "High Tensile Fasteners", color: "#C8102E" },
-  { name: "Veegrip", tag: "Industrial Belts", color: "#006633" },
 ];
 
 const REVIEWS = [
@@ -83,7 +80,7 @@ const TICKER_ITEMS = [
   "✦ Stone Crusher Parts",
   "✦ Same-Day Dispatch",
   "✦ 500+ Products in Range",
-  "✦ Call: 9062186130",
+  "✦ Call: 7349049883",
   "✦ Hubballi, Karnataka",
   "✦ Genuine Brands Only",
 ];
@@ -110,7 +107,7 @@ export default function HomePage() {
             </div>
 
             <h1 className="text-white text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight mb-5 animate-fade-up delay-100">
-              Industrial <span className="shimmer-text">Bearings,</span><br />Chains &amp; Belts
+              Industrial <span className="shimmer-text">Bearings &amp;</span><br />Chain Centre
             </h1>
 
             <p className="text-white/80 text-lg sm:text-xl leading-relaxed mb-8 animate-fade-up delay-200">
@@ -173,13 +170,13 @@ export default function HomePage() {
 
             {/* Primary phone — real tel: link, works on mobile */}
             <a
-              href="tel:+919062186130"
+              href="tel:+917349049883"
               className="flex items-center gap-3 px-6 py-5 flex-1 min-w-[180px] justify-center group hover:bg-white/5 transition-colors"
-              aria-label="Call IBCC on 9062186130"
+              aria-label="Call IBCC on 7349049883"
             >
               <span className="text-2xl group-hover:scale-125 group-hover:rotate-12 transition-transform duration-300">📞</span>
               <div>
-                <p className="text-white font-bold text-sm leading-tight underline underline-offset-2 decoration-[#F2A900]/60">9062186130</p>
+                <p className="text-white font-bold text-sm leading-tight underline underline-offset-2 decoration-[#F2A900]/60">7349049883</p>
                 <p className="text-[#F2A900] text-xs font-semibold">Tap to Call Now</p>
               </div>
             </a>
@@ -367,7 +364,7 @@ export default function HomePage() {
 
           <ScrollReveal className="text-center mt-14">
             <a
-              href="https://wa.me/919062186130?text=Hello%2C%20I%20need%20a%20spare%20part."
+              href="https://wa.me/917349049883?text=Hello%2C%20I%20need%20a%20spare%20part."
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-3 bg-[#25D366] text-white font-bold px-10 py-4 rounded-2xl text-base hover:bg-[#1db954] transition-all hover:scale-105 shadow-2xl shadow-green-500/30"
@@ -514,14 +511,14 @@ export default function HomePage() {
 
             <ScrollReveal delay={2}>
               <div className="flex flex-col sm:flex-row gap-4">
-                <a href="tel:+919062186130" id="cta-call-primary" className="flex items-center gap-2 bg-[#072a6b] text-white font-bold px-7 py-4 rounded-xl hover:bg-[#0B3D91] transition-all hover:scale-105 shadow-xl text-base">
-                  <PhoneIcon /> 9062186130
+                <a href="tel:+917349049883" id="cta-call-primary" className="flex items-center gap-2 bg-[#072a6b] text-white font-bold px-7 py-4 rounded-xl hover:bg-[#0B3D91] transition-all hover:scale-105 shadow-xl text-base">
+                  <PhoneIcon /> 7349049883
                 </a>
-                <a href="tel:+919036843910" id="cta-call-secondary" className="flex items-center gap-2 bg-white/30 text-[#072a6b] font-bold px-7 py-4 rounded-xl hover:bg-white/60 transition-all hover:scale-105 text-base">
-                  <PhoneIcon /> 9036843910
+                <a href="tel:+918147027162" id="cta-call-secondary" className="flex items-center gap-2 bg-white/30 text-[#072a6b] font-bold px-7 py-4 rounded-xl hover:bg-white/60 transition-all hover:scale-105 text-base">
+                  <PhoneIcon /> 81470 27162
                 </a>
                 <a
-                  href="https://wa.me/919062186130?text=Hello%2C%20I%20need%20a%20quote%20for%20"
+                  href="https://wa.me/917349049883?text=Hello%2C%20I%20need%20a%20quote%20for%20"
                   target="_blank"
                   rel="noopener noreferrer"
                   id="cta-whatsapp"

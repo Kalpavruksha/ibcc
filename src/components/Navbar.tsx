@@ -79,7 +79,7 @@ export default function Navbar() {
             <div className="flex items-center gap-3">
               {/* WhatsApp CTA */}
               <a
-                href="https://wa.me/919062186130"
+                href="https://wa.me/917349049883"
                 target="_blank"
                 rel="noopener noreferrer"
                 id="nav-whatsapp-cta"
@@ -90,7 +90,7 @@ export default function Navbar() {
               </a>
               {/* Call CTA */}
               <a
-                href="tel:+919062186130"
+                href="tel:+917349049883"
                 id="nav-call-cta"
                 className="hidden md:flex items-center gap-2 btn-primary text-sm py-2 px-4"
               >
@@ -149,7 +149,7 @@ export default function Navbar() {
               {/* Mobile CTAs */}
               <div className="flex gap-3 mt-3 pb-2">
                 <a
-                  href="https://wa.me/919062186130"
+                  href="https://wa.me/917349049883"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex-1 flex items-center justify-center gap-2 bg-[#25D366] text-white text-sm font-bold py-3 rounded-lg"
@@ -158,7 +158,7 @@ export default function Navbar() {
                   WhatsApp
                 </a>
                 <a
-                  href="tel:+919062186130"
+                  href="tel:+917349049883"
                   className="flex-1 flex items-center justify-center gap-2 btn-primary text-sm py-3 rounded-lg"
                 >
                   <PhoneIcon />

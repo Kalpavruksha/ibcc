@@ -82,7 +82,7 @@ export default function ContactClient() {
 
     // ── 2. Open WhatsApp with pre-filled message ──────────────────────
     const text = `Hello! I'm ${form.name}.\n📞 Contact: ${form.phone}${form.email ? `\n📧 Email: ${form.email}` : ""}${form.product ? `\n🔩 Product: ${form.product}` : ""}\n📝 Requirement: ${form.message}\n\n— Sent from IBCC Website`;
-    window.open(`https://wa.me/919062186130?text=${encodeURIComponent(text)}`, "_blank");
+    window.open(`https://wa.me/917349049883?text=${encodeURIComponent(text)}`, "_blank");
 
     setStatus("success");
     setForm({ name: "", phone: "", email: "", product: "", message: "" });
@@ -142,11 +142,11 @@ export default function ContactClient() {
                   </div>
                   <div>
                     <p className="font-bold text-sm">Phone</p>
-                    <a href="tel:+919062186130" id="contact-phone-1" className="text-white/70 text-sm block hover:text-[#F2A900] transition-colors mt-0.5">
-                      9062186130 (Mobile)
+                    <a href="tel:+917349049883" id="contact-phone-1" className="text-white/70 text-sm block hover:text-[#F2A900] transition-colors mt-0.5">
+                      7349049883 (Mobile)
                     </a>
-                    <a href="tel:+919036843910" id="contact-phone-2" className="text-white/70 text-sm block hover:text-[#F2A900] transition-colors">
-                      9036843910 (Mobile)
+                    <a href="tel:+918147027162" id="contact-phone-2" className="text-white/70 text-sm block hover:text-[#F2A900] transition-colors">
+                      81470 27162 (Mobile)
                     </a>
                     <a href="tel:+918364507884" id="contact-landline" className="text-white/70 text-sm block hover:text-[#F2A900] transition-colors">
                       0836-4507884 (Landline)
@@ -192,7 +192,7 @@ export default function ContactClient() {
 
             {/* WhatsApp button */}
             <a
-              href="https://wa.me/919062186130?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20your%20products."
+              href="https://wa.me/917349049883?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20your%20products."
               target="_blank"
               rel="noopener noreferrer"
               id="contact-whatsapp-btn"
@@ -204,12 +204,12 @@ export default function ContactClient() {
 
             {/* Quick call */}
             <a
-              href="tel:+919062186130"
+              href="tel:+917349049883"
               id="contact-call-direct-btn"
               className="flex items-center justify-center gap-3 btn-navy py-4 rounded-xl text-base w-full"
             >
               <PhoneIcon />
-              Call 9062186130
+              Call 7349049883
             </a>
           </div>
 
@@ -243,7 +243,7 @@ export default function ContactClient() {
                       Send Another Enquiry
                     </button>
                     <a
-                      href="https://wa.me/919062186130"
+                      href="https://wa.me/917349049883"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex items-center gap-2 bg-[#25D366] text-white font-bold px-6 py-3 rounded-lg hover:bg-[#1db954] transition-colors"
@@ -413,7 +413,7 @@ export default function ContactClient() {
                 </div>
               </a>
               <a
-                href="tel:+919062186130"
+                href="tel:+917349049883"
                 className="flex items-center gap-3 px-5 py-4 hover:bg-slate-100 transition-colors group"
               >
                 <span className="w-9 h-9 rounded-lg bg-[#F2A900] flex items-center justify-center flex-shrink-0">
@@ -423,11 +423,11 @@ export default function ContactClient() {
                 </span>
                 <div>
                   <p className="font-bold text-[#0B3D91] text-sm">Call Now</p>
-                  <p className="text-slate-500 text-xs">9062186130</p>
+                  <p className="text-slate-500 text-xs">7349049883</p>
                 </div>
               </a>
               <a
-                href="https://wa.me/919062186130?text=Hello%2C%20I%20need%20directions%20to%20your%20store."
+                href="https://wa.me/917349049883?text=Hello%2C%20I%20need%20directions%20to%20your%20store."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 px-5 py-4 hover:bg-slate-100 transition-colors group"

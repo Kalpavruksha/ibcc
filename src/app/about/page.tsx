@@ -18,10 +18,7 @@ const BRANDS = [
   { name: "Rolon", tagline: "Roller Chains", logo: "/images/logos/rolon.svg" },
   { name: "Diamond", tagline: "Industrial Chains", logo: "/images/logos/diamond.svg" },
   { name: "Hero", tagline: "Industrial Chains", logo: "/images/logos/hero.svg" },
-  { name: "Continental", tagline: "Industrial Belts", logo: "/images/logos/continental.svg" },
   { name: "KEC Bearings", tagline: "Automotive Bearings", logo: "/images/logos/kec.svg" },
-  { name: "TVS", tagline: "High Tensile Fasteners", logo: "/images/logos/tvs.svg" },
-  { name: "Veegrip", tagline: "Industrial Belts", logo: "/images/logos/veegrip.svg" },
 ];
 
 const PRODUCT_RANGE = [
@@ -141,7 +138,7 @@ export default function AboutPage() {
             <div className="lg:w-1/2 relative">
               <div className="relative rounded-2xl overflow-hidden shadow-2xl aspect-video">
                 <Image
-                  src="/images/about us.jpeg"
+                  src="/images/plant home page.png"
                   alt="Industrial Bearing &amp; Chain Centre — Hubballi"
                   fill
                   className="object-cover"
@@ -341,12 +338,20 @@ export default function AboutPage() {
               <ArrowRightIcon />
             </Link>
             <a
-              href="tel:+919062186130"
+              href="tel:+917349049883"
               id="about-call-btn"
+              className="flex items-center gap-2 bg-[#072a6b] text-white font-bold px-7 py-3.5 rounded-lg hover:bg-[#0B3D91] transition-colors"
+            >
+              <PhoneIcon />
+              7349049883
+            </a>
+            <a
+              href="tel:+918147027162"
+              id="about-call-btn-alt"
               className="flex items-center gap-2 bg-white/30 text-[#072a6b] font-bold px-7 py-3.5 rounded-lg hover:bg-white/50 transition-colors"
             >
               <PhoneIcon />
-              9062186130
+              81470 27162
             </a>
           </div>
         </div>
