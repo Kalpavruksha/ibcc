@@ -11,7 +11,6 @@ const CAT_ICONS: Record<string, string> = {
   "All": "🗂️",
   "Bearings": "⚙️",
   "V-Belts": "〰️",
-  "Fenner Poly-F": "🔁",
   "V-Pulley": "🔩",
   "Roller Chain": "⛓️",
   "Sprockets": "🦷",
@@ -47,11 +46,12 @@ export default function ProductsClient() {
 
   const filtered = products.filter((p) => {
     const matchCat = activeCategory === "All" || p.category === activeCategory;
+    const searchWords = search.toLowerCase().replace(/[-_]/g, " ").split(/\s+/).filter(Boolean);
+    const targetString = [p.name, p.description, p.brand, p.category].filter(Boolean).join(" ").toLowerCase().replace(/[-_]/g, " ");
+    
     const matchSearch =
-      !search ||
-      p.name.toLowerCase().includes(search.toLowerCase()) ||
-      p.description.toLowerCase().includes(search.toLowerCase()) ||
-      (p.brand && p.brand.toLowerCase().includes(search.toLowerCase()));
+      !search || searchWords.every((word) => targetString.includes(word));
+    
     return matchCat && matchSearch;
   });
 

@@ -10,12 +10,12 @@ export const metadata: Metadata = {
 };
 
 const CATEGORIES = [
-  { id: "bearings", label: "Bearings", desc: "SKF, FAG, NTN, NBC, ARB — deep groove, spherical, taper, plumber block & pillow block", img: "/images/product-bearings.png", href: "/products?category=Bearings", badge: "BEARINGS", color: "#0B3D91" },
-  { id: "vbelts", label: "V-Belts", desc: "A, B, C, D section & Fenner Poly-F raw-edge cogged belts for all industrial drives", img: "/images/product-vbelts.png", href: "/products?category=V-Belts", badge: "V-BELTS", color: "#E31E24" },
-  { id: "chains-sprockets", label: "Chains & Sprockets", desc: "Rolon, Diamond, Hero roller chains & precision-machined sprockets in BS/ANSI sizes", img: "/images/real-photo-chain.png", href: "/products?category=Roller+Chain", badge: "CHAINS & SPROCKETS", color: "#1E3A5F" },
-  { id: "conveyor-belts", label: "Conveyor Belts", desc: "EP-grade flat belts, chevron belts, idler rollers & conveyor accessories", img: "/images/product-conveyor-belts.png", href: "/products?category=Conveyor+Belts", badge: "CONVEYOR BELTS", color: "#006633" },
-  { id: "ricemill", label: "Rice Mill Spares", desc: "Rubber rollers, sheller stones, separator screens, bearing sets & V-belt kits", img: "/images/product-ricemill-spares.png", href: "/products?category=Rice+Mill+Spares", badge: "RICE MILL SPARES", color: "#C8A000" },
-  { id: "crusher", label: "Crusher Spares", desc: "Jaw plates, toggle plates, bearing sets & V-belt kits for stone crushers", img: "/images/product-crusher-spares.png", href: "/products?category=Crusher+Spares", badge: "CRUSHER SPARES", color: "#7B3F00" },
+  { id: "bearings", label: "Bearings", desc: "SKF, FAG, NTN, NBC, ARB — deep groove, spherical, taper, plumber block & pillow block", img: "/images/real image/skf-bearings-solutions.jpg", href: "/products?category=Bearings", badge: "BEARINGS", color: "#0B3D91" },
+  { id: "vbelts", label: "V-Belts", desc: "A, B, C, D section & Fenner Poly-F raw-edge cogged belts for all industrial drives", img: "/images/real image/Fenner-Belts.jpg", href: "/products?category=V-Belts", badge: "V-BELTS", color: "#E31E24" },
+  { id: "chains-sprockets", label: "Chains & Sprockets", desc: "Rolon, Diamond, Hero roller chains & precision-machined sprockets in BS/ANSI sizes", img: "/images/real image/roller-chain-sprocket.jpg", href: "/products?category=Roller+Chain", badge: "CHAINS & SPROCKETS", color: "#1E3A5F" },
+  { id: "conveyor-belts", label: "Conveyor Belts", desc: "EP-grade flat belts, chevron belts, idler rollers & conveyor accessories", img: "/images/real image/V- type Conveyor-Belt.webp", href: "/products?category=Conveyor+Belts", badge: "CONVEYOR BELTS", color: "#006633" },
+  { id: "material-handling", label: "Material Handling", desc: "Trolley wheels, metal and plastic elevator buckets for all material handling needs", img: "/images/real image/plastic-elevator-buckets.webp", href: "/products?category=Material+Handling", badge: "MATERIAL HANDLING", color: "#C8A000" },
+  { id: "crusher", label: "Crusher Spares", desc: "Jaw plates, toggle plates, bearing sets & V-belt kits for stone crushers", img: "/images/real image/impact-idlers stone crushers.jpg", href: "/products?category=Crusher+Spares", badge: "CRUSHER SPARES", color: "#7B3F00" },
 ];
 
 const WHY_CHOOSE = [
@@ -39,8 +39,10 @@ const BRANDS = [
   { name: "Hero", tag: "Industrial Chains", color: "#003087" },
   { name: "NBR", tag: "Industrial Spares", color: "#003F8A" },
   { name: "FKRS", tag: "Industrial Spares", color: "#E30613" },
-  { name: "HKG", tag: "Industrial Spares", color: "#00823F" },
-  { name: "ROCKMAN", tag: "Industrial Spares", color: "#FF6600" },
+  { name: "HKG", tag: "Industrial Spares", color: "#E31E24" },
+  { name: "ROCKMAN", tag: "Industrial Spares", color: "#003087" },
+  { name: "EcoDrive", tag: "V-Belts", color: "#F2A900" },
+  { name: "PIX", tag: "V-Belts", color: "#FF0000" },
 ];
 
 const REVIEWS = [

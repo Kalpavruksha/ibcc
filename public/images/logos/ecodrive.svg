@@ -5,8 +5,8 @@
       font-weight: 900;
       font-style: italic;
       font-size: 24px;
-      fill: #E31E24;
+      fill: #F2A900;
     }
   </style>
-  <text x="50%" y="35" text-anchor="middle" class="brand-text">HKG</text>
+  <text x="50%" y="35" text-anchor="middle" class="brand-text">EcoDrive</text>
 </svg>

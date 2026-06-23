@@ -23,6 +23,8 @@ const BRANDS = [
   { name: "FKRS", tagline: "Industrial Spares", logo: "/images/logos/fkrs.svg" },
   { name: "HKG", tagline: "Industrial Spares", logo: "/images/logos/hkg.svg" },
   { name: "ROCKMAN", tagline: "Industrial Spares", logo: "/images/logos/rockman.svg" },
+  { name: "EcoDrive", tagline: "V-Belts", logo: "/images/logos/ecodrive.svg" },
+  { name: "PIX", tagline: "V-Belts", logo: "/images/logos/pix.svg" },
 ];
 
 const PRODUCT_RANGE = [
