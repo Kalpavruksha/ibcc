@@ -130,206 +130,206 @@ export const products: Product[] = [
   },
   {
     id: "prod-14",
+    name: "Fenner Gear Box",
+    category: "Gearboxes",
+    image: "/images/real image/Fenner Gear Box.jpg",
+    description: "Premium quality Fenner Gear Box for industrial applications."
+  },
+  {
+    id: "prod-15",
     name: "Fenner Reduction Gear Boxes All Models",
     category: "Gearboxes",
     image: "/images/real image/Fenner Reduction Gear Boxes All Models.webp",
     description: "Premium quality Fenner Reduction Gear Boxes All Models for industrial applications."
   },
   {
-    id: "prod-15",
+    id: "prod-16",
     name: "Flat Slings",
     category: "Material Handling",
     image: "/images/real image/flat slings.png",
     description: "Premium quality Flat Slings for industrial applications."
   },
   {
-    id: "prod-16",
+    id: "prod-17",
     name: "Grease",
     category: "Fasteners & Hardware",
     image: "/images/real image/grease.png",
     description: "Premium quality Grease for industrial applications."
   },
   {
-    id: "prod-17",
+    id: "prod-18",
     name: "Impact Idlers Stone Crushers",
     category: "Crusher Spares",
     image: "/images/real image/impact-idlers stone crushers.jpg",
     description: "Premium quality Impact Idlers Stone Crushers for industrial applications."
   },
   {
-    id: "prod-18",
+    id: "prod-19",
     name: "Indef Chain Pulley Block",
     category: "Chain Pulley Block",
     image: "/images/real image/indef-chain-pulley-block.jpeg",
     description: "Premium quality Indef Chain Pulley Block for industrial applications."
   },
   {
-    id: "prod-19",
+    id: "prod-20",
     name: "Indef Chain Pully Blocks 500x500",
     category: "Chain Pulley Block",
     image: "/images/real image/indef-chain-pully-blocks-500x500.webp",
     description: "Premium quality Indef Chain Pully Blocks 500x500 for industrial applications."
   },
   {
-    id: "prod-20",
+    id: "prod-21",
     name: "Industrial V Belt Pulley",
     category: "V-Pulley",
     image: "/images/real image/Industrial-V-Belt-Pulley.jpg",
     description: "Premium quality Industrial V Belt Pulley for industrial applications."
   },
   {
-    id: "prod-21",
+    id: "prod-22",
     name: "Jaw Crusher Plate Stone Crushers",
     category: "Crusher Spares",
     image: "/images/real image/Jaw-Crusher-Plate stone crushers.jpg",
     description: "Premium quality Jaw Crusher Plate Stone Crushers for industrial applications."
   },
   {
-    id: "prod-22",
+    id: "prod-23",
     name: "Jiger Gearbox All Models",
     category: "Gearboxes",
     image: "/images/real image/Jiger Gearbox All Models.jpg",
     description: "Premium quality Jiger Gearbox All Models for industrial applications."
   },
   {
-    id: "prod-23",
+    id: "prod-24",
     name: "Lagging Sheet Converyer Belt",
     category: "Conveyor Belts",
     image: "/images/real image/lagging sheet converyer belt.webp",
     description: "Premium quality Lagging Sheet Converyer Belt for industrial applications."
   },
   {
-    id: "prod-24",
+    id: "prod-25",
     name: "LOVEJOY COUPLING",
     category: "Oil Seals & Couplings",
     image: "/images/real image/LOVEJOY COUPLING.jpeg",
     description: "Premium quality LOVEJOY COUPLING for industrial applications."
   },
   {
-    id: "prod-25",
+    id: "prod-26",
     name: "MASTA BLOCKS",
     category: "Chain Pulley Block",
     image: "/images/real image/MASTA BLOCKS.jpg",
     description: "Premium quality MASTA BLOCKS for industrial applications."
   },
   {
-    id: "prod-26",
+    id: "prod-27",
     name: "MS PERFORATED SHEETS Stone Crusher",
     category: "Crusher Spares",
     image: "/images/real image/MS PERFORATED SHEETS stone crusher.jpg",
     description: "Premium quality MS PERFORATED SHEETS Stone Crusher for industrial applications."
   },
   {
-    id: "prod-27",
+    id: "prod-28",
     name: "Nidel Bearins",
     category: "Bearings",
     image: "/images/real image/nidel bearins.jpg",
     description: "Premium quality Nidel Bearins for industrial applications."
   },
   {
-    id: "prod-28",
+    id: "prod-29",
     name: "Nylon Gear Coupling",
     category: "Oil Seals & Couplings",
     image: "/images/real image/nylon-gear-coupling.webp",
     description: "Premium quality Nylon Gear Coupling for industrial applications."
   },
   {
-    id: "prod-29",
+    id: "prod-30",
     name: "OIL SEALS",
     category: "Oil Seals & Couplings",
     image: "/images/real image/OIL SEALS.jpg",
     description: "Premium quality OIL SEALS for industrial applications."
   },
   {
-    id: "prod-30",
+    id: "prod-31",
     name: "PATTA BOLTS",
     category: "Fasteners & Hardware",
     image: "/images/real image/PATTA BOLTS.jpg",
     description: "Premium quality PATTA BOLTS for industrial applications."
   },
   {
-    id: "prod-31",
+    id: "prod-32",
     name: "Pillow Block Bearing",
     category: "Bearings",
     image: "/images/real image/pillow-block-bearing.jpg",
     description: "Premium quality Pillow Block Bearing for industrial applications."
   },
   {
-    id: "prod-32",
+    id: "prod-33",
     name: "PINBUSH COUPLING FENNER",
     category: "Oil Seals & Couplings",
     image: "/images/real image/PINBUSH COUPLING FENNER.png",
     description: "Premium quality PINBUSH COUPLING FENNER for industrial applications."
   },
   {
-    id: "prod-33",
+    id: "prod-34",
     name: "PIX Belt",
     category: "V-Belts",
     image: "/images/real image/PIX belt.jpeg",
     description: "Premium quality PIX Belt for industrial applications."
   },
   {
-    id: "prod-34",
+    id: "prod-35",
     name: "Plastic Elevator Buckets",
     category: "Rice Mill Spares",
     image: "/images/real image/plastic-elevator-buckets.webp",
     description: "Premium quality Plastic Elevator Buckets for industrial applications."
   },
   {
-    id: "prod-35",
+    id: "prod-36",
     name: "POLY F FENNER V BELTS",
     category: "V-Belts",
     image: "/images/real image/POLY F FENNER V BELTS.jpg",
     description: "Premium quality POLY F FENNER V BELTS for industrial applications."
   },
   {
-    id: "prod-36",
+    id: "prod-37",
     name: "Return Roller Stone Crusher",
     category: "Crusher Spares",
     image: "/images/real image/return roller stone crusher.jpeg",
     description: "Premium quality Return Roller Stone Crusher for industrial applications."
   },
   {
-    id: "prod-37",
+    id: "prod-38",
     name: "Rice Mill Elevator Belt",
     category: "Rice Mill Spares",
     image: "/images/real image/rice-mill-elevator-belt.jpeg",
     description: "Premium quality Rice Mill Elevator Belt for industrial applications."
   },
   {
-    id: "prod-38",
+    id: "prod-39",
     name: "Roller Chain Simplex Duplex And Triplex",
     category: "Chains & Sprockets",
     image: "/images/real image/Roller chain  simplex duplex and triplex.jpeg",
     description: "Premium quality Roller Chain Simplex Duplex And Triplex for industrial applications."
   },
   {
-    id: "prod-39",
+    id: "prod-40",
     name: "Roller Chain Sprocket",
     category: "Chains & Sprockets",
     image: "/images/real image/roller-chain-sprocket.jpg",
     description: "Premium quality Roller Chain Sprocket for industrial applications."
   },
   {
-    id: "prod-40",
+    id: "prod-41",
     name: "Rollers And Idlers",
     category: "Crusher Spares",
     image: "/images/real image/rollers-and-idlers.jpg",
     description: "Premium quality Rollers And Idlers for industrial applications."
   },
   {
-    id: "prod-41",
+    id: "prod-42",
     name: "Skf Bearings Solutions",
     category: "Bearings",
     image: "/images/real image/skf-bearings-solutions.jpg",
     description: "Premium quality Skf Bearings Solutions for industrial applications."
-  },
-  {
-    id: "prod-42",
-    name: "SMSR TBD Gearbox",
-    category: "Gearboxes",
-    image: "/images/real image/SMSR-TBD-Gearbox.jpg",
-    description: "Premium quality SMSR TBD Gearbox for industrial applications."
   },
   {
     id: "prod-43",
