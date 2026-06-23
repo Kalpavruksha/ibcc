@@ -11,11 +11,10 @@ export default function Footer() {
       {/* Main footer content */}
       <div className="container-xl pt-20 pb-16">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
-          {/* Brand column */}
           <div className="lg:col-span-1">
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-10 h-10 rounded-md overflow-hidden flex-shrink-0 bg-white shadow">
-                <Image src="/images/logo cmp.png" alt="IBCC Logo" width={40} height={40} className="object-contain w-full h-full" />
+              <div className="w-12 h-12 flex-shrink-0">
+                <Image src="/images/logo-transparent.png" alt="IBCC Logo" width={48} height={48} className="object-contain w-full h-full" />
               </div>
               <div>
                 <p className="text-white font-extrabold text-sm leading-tight">INDUSTRIAL BEARING</p>

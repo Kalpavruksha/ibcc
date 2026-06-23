@@ -41,8 +41,8 @@ export default function Navbar() {
             {/* Logo */}
             <Link href="/" className="flex items-center gap-3 group" id="nav-logo">
               {/* Company Logo */}
-              <div className="w-11 h-11 rounded-md overflow-hidden flex-shrink-0 transition-transform group-hover:scale-110 shadow-md bg-white">
-                <Image src="/images/logo cmp.png" alt="Industrial Bearing & Chain Centre Logo" width={44} height={44} className="object-contain w-full h-full" />
+              <div className="w-12 h-12 flex-shrink-0 transition-transform group-hover:scale-110">
+                <Image src="/images/logo-transparent.png" alt="Industrial Bearing & Chain Centre Logo" width={48} height={48} className="object-contain w-full h-full" />
               </div>
               <div className="flex flex-col">
                 <span className="text-white font-extrabold text-base leading-tight tracking-tight hidden sm:block">
