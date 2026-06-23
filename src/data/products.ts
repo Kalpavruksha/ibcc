@@ -9,6 +9,7 @@ export type ProductCategory =
   | "Oil Seals & Couplings"
   | "Fasteners & Hardware"
   | "Material Handling"
+  | "Rice Mill Spares"
   | "Crusher Spares";
 
 export type Product = {
@@ -31,6 +32,7 @@ export const ALL_CATEGORIES: ProductCategory[] = [
   "Oil Seals & Couplings",
   "Fasteners & Hardware",
   "Material Handling",
+  "Rice Mill Spares",
   "Crusher Spares",
 ];
 
@@ -58,24 +60,24 @@ export const products: Product[] = [
   },
   {
     id: "prod-4",
-    name: "Bmh Electric Hoist",
-    category: "Chain Pulley Block",
-    image: "/images/real image/bmh-electric-hoist.jpg",
-    description: "Premium quality Bmh Electric Hoist for industrial applications."
-  },
-  {
-    id: "prod-5",
     name: "CHAIN BLOCK",
     category: "Chain Pulley Block",
     image: "/images/real image/CHAIN BLOCK.jpg",
     description: "Premium quality CHAIN BLOCK for industrial applications."
   },
   {
-    id: "prod-6",
-    name: "CHAINS SPROCKETS 1",
+    id: "prod-5",
+    name: "CHAINS SPROCKETS",
     category: "Chains & Sprockets",
-    image: "/images/real image/CHAINS_SPROCKETS_1.jpg",
-    description: "Premium quality CHAINS SPROCKETS 1 for industrial applications."
+    image: "/images/real image/CHAINS SPROCKETS .jpeg",
+    description: "Premium quality CHAINS SPROCKETS for industrial applications."
+  },
+  {
+    id: "prod-6",
+    name: "Coil Springs",
+    category: "Crusher Spares",
+    image: "/images/real image/Coil-Springs.webp",
+    description: "Premium quality Coil Springs for industrial applications."
   },
   {
     id: "prod-7",
@@ -93,101 +95,101 @@ export const products: Product[] = [
   },
   {
     id: "prod-9",
+    name: "Diaphragm",
+    category: "Crusher Spares",
+    image: "/images/real image/diaphragm.jpeg",
+    description: "Premium quality Diaphragm for industrial applications."
+  },
+  {
+    id: "prod-10",
     name: "ECODRIVE Belt",
     category: "V-Belts",
     image: "/images/real image/ECODRIVE belt.webp",
     description: "Premium quality ECODRIVE Belt for industrial applications."
   },
   {
-    id: "prod-10",
+    id: "prod-11",
+    name: "Electric Hoist",
+    category: "Chain Pulley Block",
+    image: "/images/real image/Electric Hoist.jpg",
+    description: "Premium quality Electric Hoist for industrial applications."
+  },
+  {
+    id: "prod-12",
     name: "Elevator Buckets Metal",
-    category: "Material Handling",
+    category: "Rice Mill Spares",
     image: "/images/real image/Elevator-Buckets metal.jpg",
     description: "Premium quality Elevator Buckets Metal for industrial applications."
   },
   {
-    id: "prod-11",
+    id: "prod-13",
     name: "Fastners",
     category: "Fasteners & Hardware",
     image: "/images/real image/Fastners.jpg",
     description: "Premium quality Fastners for industrial applications."
   },
   {
-    id: "prod-12",
-    name: "Fenner Belts",
-    category: "V-Belts",
-    image: "/images/real image/Fenner-Belts.jpg",
-    description: "Premium quality Fenner Belts for industrial applications."
-  },
-  {
-    id: "prod-13",
-    name: "Fenner Reduction Gear Boxes F 20260309142734701",
-    category: "Gearboxes",
-    image: "/images/real image/fenner-reduction-gear-boxes-f-20260309142734701.webp",
-    description: "Premium quality Fenner Reduction Gear Boxes F 20260309142734701 for industrial applications."
-  },
-  {
     id: "prod-14",
+    name: "Fenner Reduction Gear Boxes All Models",
+    category: "Gearboxes",
+    image: "/images/real image/Fenner Reduction Gear Boxes All Models.webp",
+    description: "Premium quality Fenner Reduction Gear Boxes All Models for industrial applications."
+  },
+  {
+    id: "prod-15",
     name: "Flat Slings",
     category: "Material Handling",
     image: "/images/real image/flat slings.png",
     description: "Premium quality Flat Slings for industrial applications."
   },
   {
-    id: "prod-15",
+    id: "prod-16",
     name: "Grease",
     category: "Fasteners & Hardware",
     image: "/images/real image/grease.png",
     description: "Premium quality Grease for industrial applications."
   },
   {
-    id: "prod-16",
+    id: "prod-17",
     name: "Impact Idlers Stone Crushers",
     category: "Crusher Spares",
     image: "/images/real image/impact-idlers stone crushers.jpg",
     description: "Premium quality Impact Idlers Stone Crushers for industrial applications."
   },
   {
-    id: "prod-17",
+    id: "prod-18",
     name: "Indef Chain Pulley Block",
     category: "Chain Pulley Block",
     image: "/images/real image/indef-chain-pulley-block.jpeg",
     description: "Premium quality Indef Chain Pulley Block for industrial applications."
   },
   {
-    id: "prod-18",
+    id: "prod-19",
     name: "Indef Chain Pully Blocks 500x500",
     category: "Chain Pulley Block",
     image: "/images/real image/indef-chain-pully-blocks-500x500.webp",
     description: "Premium quality Indef Chain Pully Blocks 500x500 for industrial applications."
   },
   {
-    id: "prod-19",
+    id: "prod-20",
     name: "Industrial V Belt Pulley",
     category: "V-Pulley",
     image: "/images/real image/Industrial-V-Belt-Pulley.jpg",
     description: "Premium quality Industrial V Belt Pulley for industrial applications."
   },
   {
-    id: "prod-20",
+    id: "prod-21",
     name: "Jaw Crusher Plate Stone Crushers",
     category: "Crusher Spares",
     image: "/images/real image/Jaw-Crusher-Plate stone crushers.jpg",
     description: "Premium quality Jaw Crusher Plate Stone Crushers for industrial applications."
   },
   {
-    id: "prod-21",
-    name: "JIGER GEAR BOXES",
-    category: "Gearboxes",
-    image: "/images/real image/JIGER GEAR BOXES.webp",
-    description: "Premium quality JIGER GEAR BOXES for industrial applications."
-  },
-  {
     id: "prod-22",
-    name: "Jiger Gearbox",
+    name: "Jiger Gearbox All Models",
     category: "Gearboxes",
-    image: "/images/real image/jiger gearbox.jpg",
-    description: "Premium quality Jiger Gearbox for industrial applications."
+    image: "/images/real image/Jiger Gearbox All Models.jpg",
+    description: "Premium quality Jiger Gearbox All Models for industrial applications."
   },
   {
     id: "prod-23",
@@ -198,10 +200,10 @@ export const products: Product[] = [
   },
   {
     id: "prod-24",
-    name: "LOVEJOY COUPLING2",
+    name: "LOVEJOY COUPLING",
     category: "Oil Seals & Couplings",
-    image: "/images/real image/LOVEJOY COUPLING2.jpeg",
-    description: "Premium quality LOVEJOY COUPLING2 for industrial applications."
+    image: "/images/real image/LOVEJOY COUPLING.jpeg",
+    description: "Premium quality LOVEJOY COUPLING for industrial applications."
   },
   {
     id: "prod-25",
@@ -269,7 +271,7 @@ export const products: Product[] = [
   {
     id: "prod-34",
     name: "Plastic Elevator Buckets",
-    category: "Material Handling",
+    category: "Rice Mill Spares",
     image: "/images/real image/plastic-elevator-buckets.webp",
     description: "Premium quality Plastic Elevator Buckets for industrial applications."
   },
@@ -282,101 +284,101 @@ export const products: Product[] = [
   },
   {
     id: "prod-36",
+    name: "Return Roller Stone Crusher",
+    category: "Crusher Spares",
+    image: "/images/real image/return roller stone crusher.jpeg",
+    description: "Premium quality Return Roller Stone Crusher for industrial applications."
+  },
+  {
+    id: "prod-37",
+    name: "Rice Mill Elevator Belt",
+    category: "Rice Mill Spares",
+    image: "/images/real image/rice-mill-elevator-belt.jpeg",
+    description: "Premium quality Rice Mill Elevator Belt for industrial applications."
+  },
+  {
+    id: "prod-38",
+    name: "Roller Chain Simplex Duplex And Triplex",
+    category: "Chains & Sprockets",
+    image: "/images/real image/Roller chain  simplex duplex and triplex.jpeg",
+    description: "Premium quality Roller Chain Simplex Duplex And Triplex for industrial applications."
+  },
+  {
+    id: "prod-39",
     name: "Roller Chain Sprocket",
     category: "Chains & Sprockets",
     image: "/images/real image/roller-chain-sprocket.jpg",
     description: "Premium quality Roller Chain Sprocket for industrial applications."
   },
   {
-    id: "prod-37",
+    id: "prod-40",
     name: "Rollers And Idlers",
     category: "Crusher Spares",
     image: "/images/real image/rollers-and-idlers.jpg",
     description: "Premium quality Rollers And Idlers for industrial applications."
   },
   {
-    id: "prod-38",
+    id: "prod-41",
     name: "Skf Bearings Solutions",
     category: "Bearings",
     image: "/images/real image/skf-bearings-solutions.jpg",
     description: "Premium quality Skf Bearings Solutions for industrial applications."
   },
   {
-    id: "prod-39",
+    id: "prod-42",
     name: "SMSR TBD Gearbox",
     category: "Gearboxes",
     image: "/images/real image/SMSR-TBD-Gearbox.jpg",
     description: "Premium quality SMSR TBD Gearbox for industrial applications."
   },
   {
-    id: "prod-40",
-    name: "SPROCKETS 2",
-    category: "Chains & Sprockets",
-    image: "/images/real image/SPROCKETS 2.jpeg",
-    description: "Premium quality SPROCKETS 2 for industrial applications."
-  },
-  {
-    id: "prod-41",
-    name: "Sprockets1 Min",
-    category: "Chains & Sprockets",
-    image: "/images/real image/sprockets1-min.jpg",
-    description: "Premium quality Sprockets1 Min for industrial applications."
-  },
-  {
-    id: "prod-42",
+    id: "prod-43",
     name: "Square Nut Bolt",
     category: "Fasteners & Hardware",
     image: "/images/real image/square nut bolt.jpeg",
     description: "Premium quality Square Nut Bolt for industrial applications."
   },
   {
-    id: "prod-43",
+    id: "prod-44",
     name: "Star Coupling",
     category: "Oil Seals & Couplings",
     image: "/images/real image/star coupling.webp",
     description: "Premium quality Star Coupling for industrial applications."
   },
   {
-    id: "prod-44",
+    id: "prod-45",
     name: "Stone Crusher Wire Mesh 1000x1000",
     category: "Crusher Spares",
     image: "/images/real image/stone-crusher-wire-mesh-1000x1000.jpg",
     description: "Premium quality Stone Crusher Wire Mesh 1000x1000 for industrial applications."
   },
   {
-    id: "prod-45",
+    id: "prod-46",
     name: "TAPER LOCK PULLEY",
     category: "V-Pulley",
     image: "/images/real image/TAPER LOCK PULLEY.jpg",
     description: "Premium quality TAPER LOCK PULLEY for industrial applications."
   },
   {
-    id: "prod-46",
+    id: "prod-47",
     name: "Tapper Lock Pulley",
     category: "V-Pulley",
     image: "/images/real image/tapper lock pulley.jpg",
     description: "Premium quality Tapper Lock Pulley for industrial applications."
   },
   {
-    id: "prod-47",
+    id: "prod-48",
     name: "Tapper Roller",
     category: "Bearings",
     image: "/images/real image/tapper-roller.webp",
     description: "Premium quality Tapper Roller for industrial applications."
   },
   {
-    id: "prod-48",
+    id: "prod-49",
     name: "Thrust Roller Bearing",
     category: "Bearings",
     image: "/images/real image/Thrust-Roller-Bearing.jpg",
     description: "Premium quality Thrust Roller Bearing for industrial applications."
-  },
-  {
-    id: "prod-49",
-    name: "TROLLEY WHEELS 2",
-    category: "Material Handling",
-    image: "/images/real image/TROLLEY WHEELS 2.webp",
-    description: "Premium quality TROLLEY WHEELS 2 for industrial applications."
   },
   {
     id: "prod-50",
@@ -387,10 +389,10 @@ export const products: Product[] = [
   },
   {
     id: "prod-51",
-    name: "V  Type Conveyor Belt",
+    name: "V Type Conveyor Belt",
     category: "Conveyor Belts",
     image: "/images/real image/V- type Conveyor-Belt.webp",
-    description: "Premium quality V  Type Conveyor Belt for industrial applications."
+    description: "Premium quality V Type Conveyor Belt for industrial applications."
   },
   {
     id: "prod-52",
@@ -408,9 +410,9 @@ export const products: Product[] = [
   },
   {
     id: "prod-54",
-    name: "WIRE ROPE 1",
+    name: "WIRE ROPE",
     category: "Material Handling",
-    image: "/images/real image/WIRE ROPE 1.webp",
-    description: "Premium quality WIRE ROPE 1 for industrial applications."
+    image: "/images/real image/WIRE ROPE.webp",
+    description: "Premium quality WIRE ROPE for industrial applications."
   }
 ];

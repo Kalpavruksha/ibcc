@@ -19,6 +19,7 @@ const CAT_ICONS: Record<string, string> = {
   "Oil Seals & Couplings": "💧",
   "Fasteners & Hardware": "🔨",
   "Material Handling": "🚜",
+  "Rice Mill Spares": "🌾",
   "Crusher Spares": "🪨",
 };
 
