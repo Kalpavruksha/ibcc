@@ -46,31 +46,31 @@ export const products: Product[] = [
   },
   {
     id: "prod-2",
-    name: "BEARING SLEEVE",
+    name: "Bearing Sleeve",
     category: "Bearings",
     image: "/images/real image/BEARING SLEEVE.jpeg",
-    description: "Premium quality BEARING SLEEVE for industrial applications."
+    description: "Premium quality Bearing Sleeve for industrial applications."
   },
   {
     id: "prod-3",
-    name: "BLOCKS",
+    name: "Blocks",
     category: "Chain Pulley Block",
     image: "/images/real image/BLOCKS.webp",
-    description: "Premium quality BLOCKS for industrial applications."
+    description: "Premium quality Blocks for industrial applications."
   },
   {
     id: "prod-4",
-    name: "CHAIN BLOCK",
+    name: "Chain Block",
     category: "Chain Pulley Block",
     image: "/images/real image/CHAIN BLOCK.jpg",
-    description: "Premium quality CHAIN BLOCK for industrial applications."
+    description: "Premium quality Chain Block for industrial applications."
   },
   {
     id: "prod-5",
-    name: "CHAINS SPROCKETS",
+    name: "Chains Sprockets",
     category: "Chains & Sprockets",
     image: "/images/real image/CHAINS SPROCKETS .jpeg",
-    description: "Premium quality CHAINS SPROCKETS for industrial applications."
+    description: "Premium quality Chains Sprockets for industrial applications."
   },
   {
     id: "prod-6",
@@ -88,10 +88,10 @@ export const products: Product[] = [
   },
   {
     id: "prod-8",
-    name: "D SHACKLES",
+    name: "D Shackles",
     category: "Material Handling",
     image: "/images/real image/D SHACKLES.jpg",
-    description: "Premium quality D SHACKLES for industrial applications."
+    description: "Premium quality D Shackles for industrial applications."
   },
   {
     id: "prod-9",
@@ -130,17 +130,17 @@ export const products: Product[] = [
   },
   {
     id: "prod-14",
-    name: "Fenner Gear Box",
+    name: "FENNER Gear Box",
     category: "Gearboxes",
     image: "/images/real image/Fenner Gear Box.jpg",
-    description: "Premium quality Fenner Gear Box for industrial applications."
+    description: "Premium quality FENNER Gear Box for industrial applications."
   },
   {
     id: "prod-15",
-    name: "Fenner Reduction Gear Boxes All Models",
+    name: "FENNER Reduction Gear Boxes All Models",
     category: "Gearboxes",
     image: "/images/real image/Fenner Reduction Gear Boxes All Models.webp",
-    description: "Premium quality Fenner Reduction Gear Boxes All Models for industrial applications."
+    description: "Premium quality FENNER Reduction Gear Boxes All Models for industrial applications."
   },
   {
     id: "prod-16",
@@ -207,24 +207,24 @@ export const products: Product[] = [
   },
   {
     id: "prod-25",
-    name: "LOVEJOY COUPLING",
+    name: "Lovejoy Coupling",
     category: "Oil Seals & Couplings",
     image: "/images/real image/LOVEJOY COUPLING.jpeg",
-    description: "Premium quality LOVEJOY COUPLING for industrial applications."
+    description: "Premium quality Lovejoy Coupling for industrial applications."
   },
   {
     id: "prod-26",
-    name: "MASTA BLOCKS",
+    name: "Masta Blocks",
     category: "Chain Pulley Block",
     image: "/images/real image/MASTA BLOCKS.jpg",
-    description: "Premium quality MASTA BLOCKS for industrial applications."
+    description: "Premium quality Masta Blocks for industrial applications."
   },
   {
     id: "prod-27",
-    name: "MS PERFORATED SHEETS Stone Crusher",
+    name: "MS Perforated Sheets Stone Crusher",
     category: "Crusher Spares",
     image: "/images/real image/MS PERFORATED SHEETS stone crusher.jpg",
-    description: "Premium quality MS PERFORATED SHEETS Stone Crusher for industrial applications."
+    description: "Premium quality MS Perforated Sheets Stone Crusher for industrial applications."
   },
   {
     id: "prod-28",
@@ -242,17 +242,17 @@ export const products: Product[] = [
   },
   {
     id: "prod-30",
-    name: "OIL SEALS",
+    name: "Oil Seals",
     category: "Oil Seals & Couplings",
     image: "/images/real image/OIL SEALS.jpg",
-    description: "Premium quality OIL SEALS for industrial applications."
+    description: "Premium quality Oil Seals for industrial applications."
   },
   {
     id: "prod-31",
-    name: "PATTA BOLTS",
+    name: "Patta Bolts",
     category: "Fasteners & Hardware",
     image: "/images/real image/PATTA BOLTS.jpg",
-    description: "Premium quality PATTA BOLTS for industrial applications."
+    description: "Premium quality Patta Bolts for industrial applications."
   },
   {
     id: "prod-32",
@@ -263,10 +263,10 @@ export const products: Product[] = [
   },
   {
     id: "prod-33",
-    name: "PINBUSH COUPLING FENNER",
+    name: "Pinbush Coupling FENNER",
     category: "Oil Seals & Couplings",
     image: "/images/real image/PINBUSH COUPLING FENNER.png",
-    description: "Premium quality PINBUSH COUPLING FENNER for industrial applications."
+    description: "Premium quality Pinbush Coupling FENNER for industrial applications."
   },
   {
     id: "prod-34",
@@ -284,10 +284,10 @@ export const products: Product[] = [
   },
   {
     id: "prod-36",
-    name: "POLY F FENNER V BELTS",
+    name: "POLY F FENNER V Belts",
     category: "V-Belts",
     image: "/images/real image/POLY F FENNER V BELTS.jpg",
-    description: "Premium quality POLY F FENNER V BELTS for industrial applications."
+    description: "Premium quality POLY F FENNER V Belts for industrial applications."
   },
   {
     id: "prod-37",
@@ -305,10 +305,10 @@ export const products: Product[] = [
   },
   {
     id: "prod-39",
-    name: "Roller Chain Simplex Duplex And Triplex",
+    name: "Roller Chain Simplex Duplex and Triplex",
     category: "Chains & Sprockets",
     image: "/images/real image/Roller chain  simplex duplex and triplex.jpeg",
-    description: "Premium quality Roller Chain Simplex Duplex And Triplex for industrial applications."
+    description: "Premium quality Roller Chain Simplex Duplex and Triplex for industrial applications."
   },
   {
     id: "prod-40",
@@ -319,17 +319,17 @@ export const products: Product[] = [
   },
   {
     id: "prod-41",
-    name: "Rollers And Idlers",
+    name: "Rollers and Idlers",
     category: "Crusher Spares",
     image: "/images/real image/rollers-and-idlers.jpg",
-    description: "Premium quality Rollers And Idlers for industrial applications."
+    description: "Premium quality Rollers and Idlers for industrial applications."
   },
   {
     id: "prod-42",
-    name: "Skf Bearings Solutions",
+    name: "SKF Bearings Solutions",
     category: "Bearings",
     image: "/images/real image/skf-bearings-solutions.jpg",
-    description: "Premium quality Skf Bearings Solutions for industrial applications."
+    description: "Premium quality SKF Bearings Solutions for industrial applications."
   },
   {
     id: "prod-43",
@@ -354,10 +354,10 @@ export const products: Product[] = [
   },
   {
     id: "prod-46",
-    name: "TAPER LOCK PULLEY",
+    name: "Taper Lock Pulley",
     category: "V-Pulley",
     image: "/images/real image/TAPER LOCK PULLEY.jpg",
-    description: "Premium quality TAPER LOCK PULLEY for industrial applications."
+    description: "Premium quality Taper Lock Pulley for industrial applications."
   },
   {
     id: "prod-47",
@@ -382,10 +382,10 @@ export const products: Product[] = [
   },
   {
     id: "prod-50",
-    name: "TROLLEY WHEELS",
+    name: "Trolley Wheels",
     category: "Material Handling",
     image: "/images/real image/TROLLEY WHEELS.webp",
-    description: "Premium quality TROLLEY WHEELS for industrial applications."
+    description: "Premium quality Trolley Wheels for industrial applications."
   },
   {
     id: "prod-51",
@@ -410,9 +410,9 @@ export const products: Product[] = [
   },
   {
     id: "prod-54",
-    name: "WIRE ROPE",
+    name: "Wire Rope",
     category: "Material Handling",
     image: "/images/real image/WIRE ROPE.webp",
-    description: "Premium quality WIRE ROPE for industrial applications."
+    description: "Premium quality Wire Rope for industrial applications."
   }
 ];

@@ -79,7 +79,16 @@ for (const file of allFiles) {
   if (skipFiles.includes(file)) continue;
 
   const category = fileToCategoryMap[file] || "Fasteners & Hardware";
-  const name = file.split('.')[0].replace(/[-_]/g, ' ').replace(/\s+/g, ' ').trim().replace(/\b\w/g, l => l.toUpperCase());
+  let baseName = file.split('.')[0].replace(/[-_]/g, ' ').replace(/\s+/g, ' ').trim();
+  const acronyms = ["SKF", "FAG", "NTN", "NBC", "ARB", "SMSR", "TBD", "MS", "PIX", "V", "IBCC", "ECODRIVE", "POLY", "FENNER"];
+  
+  const name = baseName.toLowerCase().split(' ').map(word => {
+    const upper = word.toUpperCase();
+    if (acronyms.includes(upper)) return upper;
+    if (upper === 'AND') return 'and';
+    if (upper === 'MIN') return 'Min';
+    return word.charAt(0).toUpperCase() + word.slice(1);
+  }).join(' ');
 
   newProducts.push({
     id: "prod-" + idCounter++,
