@@ -92,7 +92,7 @@ export default function ProductsClient() {
         </div>
       </div>
 
-      <div className="container-xl py-8">
+      <div className="container-xl pt-8 pb-20 sm:pb-28">
         {/* Mobile: filter toggle button */}
         <div className="lg:hidden mb-4">
           <button

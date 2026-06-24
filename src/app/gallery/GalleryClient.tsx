@@ -118,7 +118,7 @@ export default function GalleryClient() {
         </div>
       </div>
 
-      <div className="container-xl py-8 sm:py-12">
+      <div className="container-xl pt-8 pb-20 sm:pt-12 sm:pb-28">
         {/* Gallery grid — modern CSS grid */}
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3 sm:gap-5">
           {GALLERY_ITEMS.map((item) => (
