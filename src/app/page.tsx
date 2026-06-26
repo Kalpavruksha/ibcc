@@ -48,34 +48,25 @@ const BRANDS = [
 
 const REVIEWS = [
   {
-    text: "We have been sourcing SKF bearings from IBCC for our rice sheller units for over two years now. Every order has been delivered the same day with genuine parts. No substitutes, no delays. Highly reliable supplier for bulk industrial needs.",
-    author: "Basavaraj Hiremath",
-    role: "Proprietor, Hiremath Rice Industries, Gadag",
-    initial: "B",
+    text: "IBCC is the most reliable source for industrial bearings in North Karnataka. We have consistently received genuine products with no delays. They stock a wide variety across all applications.",
+    author: "Karthik R.",
+    role: "Purchase Manager, Dharwad",
+    initial: "K",
     stars: 5,
-    date: "2 weeks ago",
-    product: "SKF 6205 Deep Groove Bearings (Qty: 12)",
-    verified: true,
   },
   {
-    text: "Our stone crusher was down and we needed toggle plates and jaw plates urgently. IBCC had the parts in stock and shared a WhatsApp quote within 15 minutes. The fitting was accurate and the machine is running at full capacity. Excellent response time.",
-    author: "Santosh Kumbar",
-    role: "Stone Crusher Owner, Haveri District",
+    text: "Had an urgent requirement for SKF bearings — different sizes, larger quantity. IBCC confirmed availability the same day and delivered exactly what we needed. Very professional handling.",
+    author: "Supriya N.",
+    role: "Operations Head, Hubli",
     initial: "S",
     stars: 5,
-    date: "1 month ago",
-    product: "Jaw Crusher Toggle Plate & Jaw Plate Set",
-    verified: true,
   },
   {
-    text: "Ordered 3 Fenner B-section V-belts for our textile loom. Good availability and fair pricing. The owner personally followed up to confirm the correct size before dispatch. That kind of attention to detail is rare from a spare parts dealer. Will continue buying here.",
-    author: "Pradeep Kulkarni",
-    role: "Proprietor, Kulkarni Textile Mill, Hubballi",
-    initial: "P",
-    stars: 4,
-    date: "3 weeks ago",
-    product: "Fenner Poly-F B-Section V-Belts (Qty: 3)",
-    verified: true,
+    text: "Their team is very patient and knowledgeable. They help you choose the right bearing, belt, or pulley for your exact requirement without any confusion. Our go-to vendor for years.",
+    author: "Akash M.",
+    role: "Maintenance Engineer, Gadag",
+    initial: "A",
+    stars: 5,
   },
 ];
 
@@ -412,7 +403,6 @@ export default function HomePage() {
                 <Image src="/images/about-warehouse.png" alt="Industrial supply warehouse" fill className="object-cover" sizes="(max-width: 1024px) 100vw, 50vw" />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0B3D91]/40 to-transparent" />
               </div>
-              {/* Floating stat badge */}
               <div className="absolute -bottom-5 -right-5 bg-white rounded-xl shadow-xl border border-slate-100 px-6 py-4 hidden md:block animate-float">
                 <p className="text-[#0B3D91] font-extrabold text-2xl leading-none">2016</p>
                 <p className="text-slate-500 text-xs mt-1">Established</p>
@@ -426,76 +416,46 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── REVIEWS ─────────────────────────────────────────────────── */}
+
+
+      {/* ── TESTIMONIALS ─────────────────────────────────────────────── */}
       <section className="section-padding bg-slate-50" aria-labelledby="reviews-heading">
         <div className="container-xl">
-          <ScrollReveal className="text-center mb-14">
-            {/* Google-style rating summary */}
-            <div className="inline-flex flex-col items-center bg-white rounded-2xl shadow-md border border-slate-100 px-8 py-5 mb-6">
-              <div className="flex items-center gap-3 mb-2">
-                <svg width="28" height="28" viewBox="0 0 24 24"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
-                <span className="text-slate-600 text-sm font-semibold">Google Reviews</span>
-              </div>
-              <p className="text-4xl font-extrabold text-[#0B3D91] leading-none">4.8</p>
-              <div className="flex gap-0.5 my-1.5">
-                {[1,2,3,4,5].map(i => <svg key={i} width="18" height="18" viewBox="0 0 24 24" fill="#F2A900"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>)}
-              </div>
-              <p className="text-slate-400 text-xs">Based on 47 Google reviews</p>
-            </div>
-            <p className="badge-amber mb-3">Customer Reviews</p>
+          <ScrollReveal className="text-center mb-12">
+            <p className="badge-amber mb-3">Testimonials</p>
             <h2 id="reviews-heading" className="text-3xl sm:text-4xl font-extrabold text-[#0B3D91]">What Our Clients Say</h2>
-            <p className="text-slate-500 mt-4 max-w-2xl mx-auto">Real feedback from rice mills, stone crushers & factories across Karnataka.</p>
+            <p className="text-slate-500 mt-3 max-w-xl mx-auto text-sm">Trusted by rice mills, stone crushers and factories across Karnataka.</p>
           </ScrollReveal>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {REVIEWS.map((review, i) => (
               <ScrollReveal key={i} delay={(i + 1) as 1|2|3}>
-                <div className="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm flex flex-col hover:shadow-xl hover:border-[#F2A900]/40 hover:-translate-y-2 transition-all duration-500 h-full group">
-                  {/* Header: avatar + name + Google icon */}
-                  <div className="flex items-start gap-3 mb-4">
-                    <div className="w-11 h-11 rounded-full bg-gradient-to-br from-[#0B3D91] to-[#1a52b3] text-white flex items-center justify-center font-bold text-base shadow-md flex-shrink-0">
-                      {review.initial}
-                    </div>
-                    <div className="flex-1 min-w-0">
-                      <p className="font-bold text-slate-800 text-sm leading-tight truncate">{review.author}</p>
-                      <p className="text-xs text-slate-400 mt-0.5">{review.role}</p>
-                      <div className="flex items-center gap-2 mt-1.5">
-                        <div className="flex gap-0.5">
-                          {[1,2,3,4,5].map(s => (
-                            <svg key={s} width="12" height="12" viewBox="0 0 24 24" fill={s <= review.stars ? "#F2A900" : "#e2e8f0"}>
-                              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                            </svg>
-                          ))}
-                        </div>
-                        <span className="text-slate-400 text-[10px]">{review.date}</span>
-                      </div>
-                    </div>
-                    <svg width="20" height="20" viewBox="0 0 24 24" className="flex-shrink-0 mt-0.5" aria-hidden>
-                      <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
-                      <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
-                      <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/>
-                      <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
-                    </svg>
+                <div className="bg-white rounded-2xl p-7 border border-slate-100 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 flex flex-col h-full">
+                  {/* Big quote mark */}
+                  <div className="text-[#F2A900] text-5xl font-serif leading-none mb-3 select-none">&ldquo;</div>
+
+                  {/* Stars */}
+                  <div className="flex gap-0.5 mb-4">
+                    {[1,2,3,4,5].map(s => (
+                      <svg key={s} width="14" height="14" viewBox="0 0 24 24" fill={s <= review.stars ? "#F2A900" : "#e2e8f0"}>
+                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                      </svg>
+                    ))}
                   </div>
 
-                  {/* Product badge */}
-                  {review.product && (
-                    <div className="inline-flex items-center gap-1.5 bg-slate-50 border border-slate-200 rounded-lg px-3 py-1.5 mb-3 self-start">
-                      <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#0B3D91" strokeWidth="2.5"><path d="M20 7H4a2 2 0 00-2 2v6a2 2 0 002 2h16a2 2 0 002-2V9a2 2 0 00-2-2z"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/></svg>
-                      <span className="text-[10px] font-semibold text-slate-600">{review.product}</span>
-                    </div>
-                  )}
+                  {/* Text */}
+                  <p className="text-slate-600 text-sm leading-relaxed flex-1 italic">{review.text}</p>
 
-                  {/* Review text */}
-                  <p className="text-slate-600 text-sm leading-relaxed flex-1">{review.text}</p>
-
-                  {/* Verified badge */}
-                  {review.verified && (
-                    <div className="flex items-center gap-1.5 mt-4 pt-4 border-t border-slate-50">
-                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#22c55e" strokeWidth="2.5"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg>
-                      <span className="text-[11px] text-green-600 font-semibold">Verified Purchase</span>
+                  {/* Author */}
+                  <div className="flex items-center gap-3 mt-6 pt-5 border-t border-slate-100">
+                    <div className="w-10 h-10 rounded-full bg-gradient-to-br from-[#0B3D91] to-[#1a52b3] text-white flex items-center justify-center font-bold text-sm flex-shrink-0">
+                      {review.initial}
                     </div>
-                  )}
+                    <div>
+                      <p className="font-bold text-slate-800 text-sm">{review.author}</p>
+                      <p className="text-slate-400 text-xs mt-0.5">{review.role}</p>
+                    </div>
+                  </div>
                 </div>
               </ScrollReveal>
             ))}
