@@ -81,7 +81,7 @@ export default function ContactClient() {
     }
 
     // ── 2. Open WhatsApp with pre-filled message ──────────────────────
-    const text = `Hello! I'm ${form.name}.\n📞 Contact: ${form.phone}${form.email ? `\n📧 Email: ${form.email}` : ""}${form.product ? `\n🔩 Product: ${form.product}` : ""}\n📝 Requirement: ${form.message}\n\n— Sent from IBCC Website`;
+    const text = `Hello! I'm ${form.name}.\nContact: ${form.phone}${form.email ? `\nEmail: ${form.email}` : ""}${form.product ? `\nProduct: ${form.product}` : ""}\nRequirement: ${form.message}\n\n— Sent from IBCC Website`;
     window.open(`https://wa.me/917349049883?text=${encodeURIComponent(text)}`, "_blank");
 
     setStatus("success");
@@ -292,7 +292,7 @@ export default function ContactClient() {
                   <div className="flex-1 p-4 space-y-4 bg-opacity-50 relative" style={{ backgroundImage: "url('https://user-images.githubusercontent.com/15075759/28719144-86dc0f70-73b1-11e7-911d-60d70fcded21.png')" }}>
                     <div className="flex justify-start">
                       <div className="bg-white text-slate-800 p-3 rounded-lg rounded-tl-none shadow max-w-[85%] text-sm relative pr-10">
-                        Hello! 👋 What industrial spare or part are you looking for today? 
+                        Hello! What industrial spare or part are you looking for today? 
                         <span className="text-[10px] text-slate-400 absolute right-2 bottom-1">10:00</span>
                       </div>
                     </div>
