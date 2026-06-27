@@ -130,7 +130,9 @@ export default function RootLayout({
               "taxID": "29BRWPA5389N1ZO",
               "sameAs": [
                 "https://maps.app.goo.gl/o3DX6i8Z5LVCr9Q9A"
-              ]
+              ],
+              "logo": "https://www.industrialbearingchaincentre.in/favicon.png",
+              "image": "https://www.industrialbearingchaincentre.in/images/plant home page.png"
             })
           }}
         />
