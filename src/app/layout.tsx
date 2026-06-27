@@ -130,18 +130,7 @@ export default function RootLayout({
               "taxID": "29BRWPA5389N1ZO",
               "sameAs": [
                 "https://maps.app.goo.gl/o3DX6i8Z5LVCr9Q9A"
-              ],
-              "hasOfferCatalog": {
-                "@type": "OfferCatalog",
-                "name": "Industrial Spare Parts",
-                "itemListElement": [
-                  {"@type": "Offer", "itemOffered": {"@type": "Product", "name": "SKF Bearings"}},
-                  {"@type": "Offer", "itemOffered": {"@type": "Product", "name": "Fenner V-Belts"}},
-                  {"@type": "Offer", "itemOffered": {"@type": "Product", "name": "Rolon Roller Chains"}},
-                  {"@type": "Offer", "itemOffered": {"@type": "Product", "name": "Conveyor Belts"}},
-                  {"@type": "Offer", "itemOffered": {"@type": "Product", "name": "Rice Mill Spare Parts"}}
-                ]
-              }
+              ]
             })
           }}
         />
