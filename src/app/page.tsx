@@ -109,7 +109,7 @@ export default function HomePage() {
             </h1>
 
             <p className="text-white/80 text-lg sm:text-xl leading-relaxed mb-8 animate-fade-up delay-200">
-              Your trusted source for genuine industrial spare parts in Karnataka. Serving rice mills, crushers, conveyors &amp; feed mills since 2016.
+              Your trusted source for genuine industrial spare parts in Hubballi (Hubli) and across Karnataka. Serving rice mills, crushers, conveyors &amp; feed mills since 2016.
             </p>
 
             <div className="flex flex-wrap gap-4 animate-fade-up delay-300">

@@ -5,7 +5,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "About Us — Established 2016 | Industrial Bearing & Chain Centre",
   description:
-    "Learn about Industrial Bearing & Chain Centre — established in 2016 by Ajitkumar Jaiswal in Hubballi. Genuine bearings, chains & spare parts for industrial buyers across Karnataka.",
+    "Learn about Industrial Bearing & Chain Centre — established in 2016 by Ajitkumar Jaiswal in Hubballi (Hubli). Genuine bearings, chains & spare parts for industrial buyers across Karnataka.",
 };
 
 const BRANDS = [
@@ -117,7 +117,7 @@ export default function AboutPage() {
             Industrial Bearing &amp; Chain Centre
           </h1>
           <p className="text-white/65 max-w-2xl mx-auto text-lg animate-fade-up delay-200">
-            Established in 2016 — your trusted industrial spare parts supplier in Hubballi, Karnataka.
+            Established in 2016 — your trusted industrial spare parts supplier in Hubballi (Hubli), Karnataka.
           </p>
           {/* Quick stat pills */}
           <div className="flex flex-wrap justify-center gap-4 mt-8 animate-fade-up delay-300">
@@ -166,7 +166,7 @@ export default function AboutPage() {
               </h2>
               <div className="space-y-4 text-slate-600 leading-relaxed text-justify">
                 <p>
-                  <strong className="text-[#0B3D91]">Industrial Bearing & Chain Centre</strong> was established in 2016 with a clear purpose to be a reliable, single-stop source for genuine industrial spare parts in Hubballi and across Karnataka.
+                  <strong className="text-[#0B3D91]">Industrial Bearing & Chain Centre</strong> was established in 2016 with a clear purpose to be a reliable, single-stop source for genuine industrial spare parts in Hubballi (Hubli) and across Karnataka.
                 </p>
                 <p>
                   Founded and managed by <strong className="text-[#0B3D91]">Ajitkumar Jaiswal</strong>, the business was built on a commitment to supplying only authentic products from trusted manufacturers. No counterfeits, no compromise on quality.
