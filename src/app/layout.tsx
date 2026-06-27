@@ -16,6 +16,9 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://industrialbearingchaincentre.in"),
+  alternates: {
+    canonical: "https://industrialbearingchaincentre.in",
+  },
   title: {
     default: "Industrial Bearing & Chain Centre | Bearings, Chains & Belts — Hubballi",
     template: "%s | Industrial Bearing & Chain Centre",
@@ -52,7 +55,7 @@ export const metadata: Metadata = {
     title: "Industrial Bearing & Chain Centre | Hubballi",
     description:
       "Established 2016. Genuine industrial bearings, chains, belts & spare parts. Serving Karnataka industries. Call: 7349049883.",
-    images: [{ url: "/images/plant home page.png", width: 1200, height: 630 }],
+    images: [{ url: "/images/plant-home-page.png", width: 1200, height: 630 }],
   },
   twitter: {
     card: "summary_large_image",
@@ -92,7 +95,7 @@ export default function RootLayout({
               "name": "Industrial Bearing & Chain Centre",
               "alternateName": "IBCC Hubballi",
               "description": "Authorised stockist of SKF, FAG, NTN, Fenner, Rolon bearings, V-belts, roller chains, sprockets, conveyor belts and industrial spare parts in Hubballi, Karnataka.",
-              "url": "https://www.industrialbearingchaincentre.in",
+              "url": "https://industrialbearingchaincentre.in",
               "telephone": ["+917349049883", "+918147027162"],
               "email": "industrialbearing.hubli@gmail.com",
               "address": {
@@ -129,10 +132,11 @@ export default function RootLayout({
               "foundingDate": "2016",
               "taxID": "29BRWPA5389N1ZO",
               "sameAs": [
-                "https://maps.app.goo.gl/o3DX6i8Z5LVCr9Q9A"
+                "https://maps.app.goo.gl/o3DX6i8Z5LVCr9Q9A",
+                "https://www.instagram.com/industrialbearing.hubli"
               ],
-              "logo": "https://www.industrialbearingchaincentre.in/favicon.png",
-              "image": "https://www.industrialbearingchaincentre.in/images/plant home page.png"
+              "logo": "https://industrialbearingchaincentre.in/favicon.png",
+              "image": "https://industrialbearingchaincentre.in/images/plant-home-page.png"
             })
           }}
         />
@@ -144,9 +148,9 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "Organization",
               "name": "Industrial Bearing & Chain Centre",
-              "url": "https://www.industrialbearingchaincentre.in",
-              "logo": "https://www.industrialbearingchaincentre.in/favicon.png",
-              "image": "https://www.industrialbearingchaincentre.in/favicon.png"
+              "url": "https://industrialbearingchaincentre.in",
+              "logo": "https://industrialbearingchaincentre.in/favicon.png",
+              "image": "https://industrialbearingchaincentre.in/favicon.png"
             })
           }}
         />
