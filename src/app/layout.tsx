@@ -136,6 +136,20 @@ export default function RootLayout({
             })
           }}
         />
+        {/* Organization Schema for Logo & Brand Authority */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": "Industrial Bearing & Chain Centre",
+              "url": "https://www.industrialbearingchaincentre.in",
+              "logo": "https://www.industrialbearingchaincentre.in/favicon.png",
+              "image": "https://www.industrialbearingchaincentre.in/favicon.png"
+            })
+          }}
+        />
       </head>
       <body className="font-sans antialiased pb-16 md:pb-0">
         <SplashScreen />
