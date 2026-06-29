@@ -99,26 +99,26 @@ export default function HomePage() {
         <div className="hero-content container-xl w-full py-20">
           <div className="max-w-2xl">
             {/* Animated pill badge */}
-            <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-1.5 mb-6 animate-fade-up">
+            <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-1.5 mb-6">
               <span className="w-2 h-2 rounded-full bg-[#F2A900] inline-block animate-pulse-amber" />
               <span className="text-white/90 text-xs font-semibold tracking-wide uppercase">Established 2016 · Hubballi, Karnataka</span>
             </div>
 
-            <h1 className="text-white text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight mb-5 animate-fade-up delay-100">
+            <h1 className="text-white text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight mb-5">
               Industrial <span className="shimmer-text">Bearings &amp;</span><br />Chain Centre
             </h1>
 
-            <p className="text-white/80 text-lg sm:text-xl leading-relaxed mb-8 animate-fade-up delay-200">
+            <p className="text-white/80 text-lg sm:text-xl leading-relaxed mb-8">
               Your trusted source for genuine industrial spare parts in Hubballi (Hubli) and across Karnataka. Serving rice mills, crushers, conveyors &amp; feed mills since 2016.
             </p>
 
-            <div className="flex flex-wrap gap-4 animate-fade-up delay-300">
+            <div className="flex flex-wrap gap-4">
               <Link href="/products" id="hero-cta-products" className="btn-primary text-base px-7 py-3.5 hover:scale-105 transition-transform">View Products <ArrowRightIcon /></Link>
               <Link href="/contact" id="hero-cta-contact" className="btn-secondary text-base px-7 py-3.5 hover:scale-105 transition-transform">Contact Us</Link>
             </div>
 
-            {/* Animated stat counters */}
-            <div className="flex flex-wrap gap-10 mt-12 animate-fade-up delay-400">
+            {/* Static stat counters */}
+            <div className="flex flex-wrap gap-10 mt-12">
               {[
                 { value: "9+", label: "Years in Business" },
                 { value: "12+", label: "Brands Stocked" },
