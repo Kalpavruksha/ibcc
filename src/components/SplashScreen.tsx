@@ -8,15 +8,25 @@ export default function SplashScreen() {
 
   useEffect(() => {
     setMounted(true);
-    // Start exit transition
+    
+    // Check if user has already seen the splash screen this session
+    if (sessionStorage.getItem("seenSplash")) {
+      setVisible(false);
+      return;
+    }
+    
+    // Mark as seen for future navigations/refreshes
+    sessionStorage.setItem("seenSplash", "true");
+
+    // Start exit transition much faster (400ms) to ensure Googlebot captures the real page
     const exitTimer = setTimeout(() => {
       setAnimating(true);
-    }, 1300);
+    }, 400);
 
     // Completely remove from DOM
     const removeTimer = setTimeout(() => {
       setVisible(false);
-    }, 2000);
+    }, 900);
 
     return () => {
       clearTimeout(exitTimer);
