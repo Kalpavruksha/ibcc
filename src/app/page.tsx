@@ -88,7 +88,7 @@ export default function HomePage() {
     <div>
       {/* ── HERO ─────────────────────────────────────────────────────── */}
       <section className="hero-section" aria-label="Hero">
-        <Image src="/images/plant home page.png" alt="Industrial Bearing & Chain Centre facility" fill priority className="object-cover" sizes="100vw" />
+        <Image src="/images/plant-home-page.png" alt="Industrial Bearing & Chain Centre facility" fill priority className="object-cover" sizes="100vw" />
         <div className="hero-overlay" />
 
         {/* Floating gradient orbs */}
