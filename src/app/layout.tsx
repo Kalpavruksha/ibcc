@@ -62,8 +62,19 @@ export const metadata: Metadata = {
     title: "Industrial Bearing & Chain Centre | Hubballi, Karnataka",
     description:
       "Genuine SKF, FAG, NTN, Fenner bearings, chains & belts. Plot #29, Industrial Area, Gokul Road, Hubballi.",
+    images: ["/images/plant-home-page.png"],
   },
-  robots: { index: true, follow: true },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-video-preview": -1,
+      "max-snippet": -1,
+    },
+  },
   authors: [{ name: "Industrial Bearing & Chain Centre" }],
 };
 
@@ -136,7 +147,9 @@ export default function RootLayout({
                 "https://www.instagram.com/industrialbearing.hubli"
               ],
               "logo": "https://industrialbearingchaincentre.in/favicon.png",
-              "image": "https://industrialbearingchaincentre.in/images/plant-home-page.png"
+              "image": [
+                "https://industrialbearingchaincentre.in/images/plant-home-page.png"
+              ]
             })
           }}
         />
